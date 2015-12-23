@@ -23,7 +23,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>157</ID>
           <Description>"Global.BattleGroup"</Description>
-          <LastState Value="5" Activated="1" RealAddress="0DB9BA88"/>
+          <LastState Value="5" Activated="1" RealAddress="0DB452B0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -35,7 +35,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>137</ID>
           <Description>"Global.CurrentRoom"</Description>
-          <LastState Value="6" Activated="0" RealAddress="0DB9B650"/>
+          <LastState Value="13" Activated="0" RealAddress="0DB44BF8"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -45,9 +45,23 @@ unregistersymbol(_base)
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>196</ID>
+          <Description>"Global.MSC"</Description>
+          <LastState Value="509" Activated="0" RealAddress="0DB45B70"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>30</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>F8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>26</ID>
           <Description>"Global.EXP"</Description>
-          <LastState Value="6" Activated="0" RealAddress="0DB9B100"/>
+          <LastState Value="0" Activated="0" RealAddress="0DB446D0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -64,7 +78,7 @@ unregistersymbol(_base)
           <DropDownList DescriptionOnly="1">99999999:Encounter
 0:No Encounter
 </DropDownList>
-          <LastState Value="2134" Activated="0" RealAddress="0DB9C190"/>
+          <LastState Value="73" Activated="0" RealAddress="0DB458A0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -90,7 +104,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>27</ID>
           <Description>"Global.Gold"</Description>
-          <LastState Value="66" Activated="0" RealAddress="0DB9B4C0"/>
+          <LastState Value="0" Activated="0" RealAddress="0DB448B0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -104,7 +118,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>24</ID>
           <Description>"Global.HP"</Description>
-          <LastState Value="20" Activated="0" RealAddress="0DB9B308"/>
+          <LastState Value="20" Activated="0" RealAddress="0DB449F0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -118,7 +132,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>25</ID>
           <Description>"Global.MaxHP"</Description>
-          <LastState Value="20" Activated="0" RealAddress="0DB9B538"/>
+          <LastState Value="20" Activated="0" RealAddress="0DB44A18"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -132,7 +146,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>192</ID>
           <Description>"Global.AT"</Description>
-          <LastState Value="10" Activated="0" RealAddress="0DB9B0D8"/>
+          <LastState Value="1.54738641483636E-314" Activated="0" RealAddress="0DB444F0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -146,7 +160,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>186</ID>
           <Description>"Global.WStr (Weapon AT)"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB9C140"/>
+          <LastState Value="0" Activated="0" RealAddress="0DB455D0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>"UNDERTALE.exe"+002EBD78</Address>
@@ -161,7 +175,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>190</ID>
           <Description>"Global.ADef (Armor Defense)"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB9B060"/>
+          <LastState Value="0" Activated="0" RealAddress="0DB44770"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>"UNDERTALE.exe"+002EBD78</Address>
@@ -176,7 +190,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>23</ID>
           <Description>"Global.LV"</Description>
-          <LastState Value="1" Activated="0" RealAddress="0DB9B178"/>
+          <LastState Value="1" Activated="0" RealAddress="0DB447C0"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -190,7 +204,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>146</ID>
           <Description>"Global.Interact"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB9BFD8"/>
+          <LastState Value="1" Activated="0" RealAddress="0DB45918"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -202,7 +216,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>126</ID>
           <Description>"Global.Plot (V1)"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB94210"/>
+          <LastState Value="9.2" Activated="0" RealAddress="0DB45008"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>undertale.exe+002ebd78</Address>
@@ -214,7 +228,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>129</ID>
           <Description>"Global.Plot (V2)"</Description>
-          <LastState Value="2" Activated="0" RealAddress="0DB9B920"/>
+          <LastState Value="9.2" Activated="0" RealAddress="0DB45008"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -227,7 +241,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>194</ID>
           <Description>"Global.Kills"</Description>
-          <LastState Value="3" Activated="0" RealAddress="0DB9C028"/>
+          <LastState Value="0" Activated="0" RealAddress="0DB455F8"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -241,7 +255,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>161</ID>
           <Description>"Global.FileChoice"</Description>
-          <LastState Value="4" Activated="0" RealAddress="0DB9C4B0"/>
+          <LastState Value="0" Activated="0" RealAddress="0DB45AF8"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -257,7 +271,7 @@ unregistersymbol(_base)
           <Description>"God Mode (Enable Before Battle)"</Description>
           <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1E99:Activate
 </DropDownList>
-          <LastState Value="-21866" Activated="0" RealAddress="0DB9BD30"/>
+          <LastState Value="-1099" Activated="0" RealAddress="0DB45378"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -272,7 +286,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>124</ID>
           <Description>"Omega Flowey Player HP"</Description>
-          <LastState Value="1.13770516008224E-315" Activated="0" RealAddress="0DB9B3F8"/>
+          <LastState Value="??" Activated="0" RealAddress="00000000"/>
           <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
@@ -287,7 +301,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>138</ID>
           <Description>"Room"</Description>
-          <LastState Value="6" Activated="0" RealAddress="0090F300"/>
+          <LastState Value="13" Activated="0" RealAddress="0090F300"/>
           <Color>80000008</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>0090f300</Address>
@@ -296,7 +310,7 @@ unregistersymbol(_base)
           <ID>173</ID>
           <Description>"Inventory Editor (Activate This To Open)"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="" Activated="0" RealAddress="00000000"/>
+          <LastState Value="" Activated="1" RealAddress="00000000"/>
           <Color>80000008</Color>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
@@ -369,7 +383,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C1668"/>
+              <LastState Value="27" Activated="1" RealAddress="0D671518"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -451,7 +465,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C1678"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671528"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -533,7 +547,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C1688"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671538"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -615,7 +629,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C1698"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671548"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -697,7 +711,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C16A8"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671558"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -779,7 +793,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C16B8"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671568"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -861,7 +875,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C16C8"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671578"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -943,7 +957,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D6C16D8"/>
+              <LastState Value="0" Activated="0" RealAddress="0D671588"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
