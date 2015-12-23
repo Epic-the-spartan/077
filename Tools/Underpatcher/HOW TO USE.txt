@@ -1,6 +1,3 @@
 The "PATCHES" folder contains folders containing files named "patch.xdelta".
 
 To use the tool, choose the patch file you want, copy it to the same folder as Underpatcher, run Underpatcher, select the folder your data.win is in, and it'll patch it.
-
-
-
