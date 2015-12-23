@@ -11,7 +11,7 @@ http://forum.cheatengine.org/viewtopic.php?t=584568&sid=195904c5bbd4ff30709d3872
   
 I've added a ton of stuff to it. Here's a full list of the values at the time of writing this readme. There's a chance I'll be lazy and not update the readme even when I've changed things.  
   
-------------------  | ----------------
+------------------  | ----------------  
 Global.BattleGroup: | This is the battlegroup for your battle. You have to freeze it with the desired battlegroup and then all battles will be against that choice. It also allows you to override it for debug mode. A full list of battlegroups can be found here: http://undertale.rawr.ws/battles  
 Global.CurrentRoom: | This is your CurrentRoom. This is a separate value than "Room" as it's implemented in GML by Toby, and not as part of GameMaker. The main function of it is it stores what room you're in so the game knows where to return you after a battle.  
 Global.EXP:  		| Self explanitory  
