@@ -1,0 +1,67 @@
+if ((global.encounter > self.steps && global.interact == 0))
+{
+    script_execute(scr_steps, 290, 100, 20, 202)
+    if (global.flag[hardmode] == 1)
+    {
+        script_execute(scr_steps, 120, 60, 20, 202)
+    }
+    global.encounter = 0
+    self.battlegroup = random(20)
+    if (self.battlegroup <= 5)
+    {
+        global.battlegroup = 6
+    }
+    if (self.battlegroup > 5)
+    {
+        global.battlegroup = 7
+    }
+    if (self.battlegroup > 10)
+    {
+        global.battlegroup = 8
+    }
+    if (self.battlegroup > 15)
+    {
+        global.battlegroup = 9
+    }
+    if (self.battlegroup > 18)
+    {
+        global.battlegroup = 10
+    }
+    if (global.flag[hardmode] == 1)
+    {
+        if (self.battlegroup <= 5)
+        {
+            global.battlegroup = 125
+        }
+        if (self.battlegroup > 5)
+        {
+            global.battlegroup = 126
+        }
+        if (self.battlegroup > 10)
+        {
+            global.battlegroup = 123
+        }
+        if (self.battlegroup > 15)
+        {
+            global.battlegroup = 122
+        }
+        if (self.battlegroup > 18)
+        {
+            global.battlegroup = 124
+        }
+    }
+    if (self.alldead == 2)
+    {
+        global.battlegroup = 19
+    }
+    if (self.alldead == 1)
+    {
+        global.battlegroup = 19
+        self.alldead = 2
+    }
+    else 
+    {
+        instance_create(0, 0, obj_battleblcon)
+    }
+}
+end

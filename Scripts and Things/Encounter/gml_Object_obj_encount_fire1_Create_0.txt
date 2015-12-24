@@ -1,0 +1,30 @@
+self.alldead = 0
+global.encounter = 0
+self.factor = 220
+self.desto = 0
+if ((self.room == 144 && global.flag[progress_hotland_battles] < 1))
+{
+    self.factor = 80
+}
+if ((self.room == 145 && global.flag[progress_hotland_battles] < 2))
+{
+    self.factor = 120
+}
+if ((self.room == 159 && global.flag[progress_hotland_battles] < 3))
+{
+    self.factor = 80
+}
+if ((self.room == 174 && global.flag[progress_hotland_battles] < 4))
+{
+    self.factor = 20
+}
+script_execute(scr_steps, self.factor, 30, 40, 205)
+if (scr_enemynpc3() == 1)
+{
+    instance_destroy()
+}
+if ((self.room == 174 && global.flag[completed_shoot_puzzle4] != 0))
+{
+    instance_destroy()
+}
+end

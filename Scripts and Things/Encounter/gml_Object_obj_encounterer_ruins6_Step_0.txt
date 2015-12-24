@@ -1,0 +1,74 @@
+if (global.encounter > self.steps)
+{
+    if (global.phasing == 0)
+    {
+        if (global.interact == 0)
+        {
+            script_execute(scr_steps, 140, 210, 20, 202)
+            if (global.flag[hardmode] == 1)
+            {
+                script_execute(scr_steps, 120, 120, 20, 202)
+            }
+            global.encounter = 0
+            self.battlegroup = random(15)
+            if (self.battlegroup <= 2)
+            {
+                global.battlegroup = 18
+            }
+            if (self.battlegroup > 2)
+            {
+                global.battlegroup = 11
+            }
+            if (self.battlegroup > 9)
+            {
+                global.battlegroup = 13
+            }
+            if (global.flag[hardmode] == 1)
+            {
+                self.battlegroup = random(20)
+                if (self.battlegroup <= 4)
+                {
+                    global.battlegroup = 128
+                }
+                if (self.battlegroup > 4)
+                {
+                    global.battlegroup = 129
+                }
+                if (self.battlegroup > 8)
+                {
+                    global.battlegroup = 130
+                }
+                if (self.battlegroup > 12)
+                {
+                    global.battlegroup = 121
+                }
+                if (self.battlegroup > 16)
+                {
+                    global.battlegroup = 124
+                }
+                if (self.battlegroup > 19)
+                {
+                    global.battlegroup = 132
+                }
+            }
+            if (self.alldead == 2)
+            {
+                global.battlegroup = 19
+            }
+            if (self.alldead == 1)
+            {
+                global.battlegroup = 19
+                self.alldead = 2
+            }
+            else 
+            {
+                instance_create(0, 0, obj_battleblcon)
+            }
+        }
+    }
+    else 
+    {
+        self.steps = 0
+    }
+}
+end

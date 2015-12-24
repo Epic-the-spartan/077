@@ -1,0 +1,23 @@
+self.alldead = 0
+global.encounter = 0
+self.factor = 360
+self.desto = 0
+if (self.room == 90)
+{
+    self.factor = 110
+}
+if (self.room == 88)
+{
+    self.factor = 340
+}
+if (((self.room == 88 && global.flag[progress_water_battles] == 0) && global.entrance == 1))
+{
+    self.factor = 20
+    self.desto = 1
+}
+script_execute(scr_steps, self.factor, 30, 18, 204)
+if ((global.flag[kills_water] == 0 && global.plot > 121))
+{
+    instance_destroy()
+}
+end

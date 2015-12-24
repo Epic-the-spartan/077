@@ -1,0 +1,19 @@
+global.flag[kills_area_pointer] = self.argument3
+if (self.argument2 - global.flag[self.argument3] > 0)
+{
+    self.populationfactor = self.argument2 / self.argument2 - global.flag[self.argument3]
+    if (self.populationfactor > 8)
+    {
+        self.populationfactor = 8
+    }
+    self.steps = self.argument0 + round(random(self.argument1)) * self.populationfactor
+}
+else if ((self.alldead == 0 || self.alldead == 1))
+{
+    self.steps = 20
+}
+else 
+{
+    self.steps = self.argument0 + round(self.argument1 / 2) * 5
+}
+end

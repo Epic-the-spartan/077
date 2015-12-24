@@ -1,0 +1,68 @@
+if (global.encounter > self.steps)
+{
+    if (global.phasing == 0)
+    {
+        if (global.interact == 0)
+        {
+            script_execute(scr_steps, 340, 380, 18, 204)
+            if (self.room == 90)
+            {
+                script_execute(scr_steps, 1040, 380, 18, 204)
+            }
+            global.encounter = 0
+            self.battlegroup = floor(random(15))
+            if (self.battlegroup < 15)
+            {
+                global.battlegroup = 43
+            }
+            if (self.battlegroup < 11)
+            {
+                global.battlegroup = 53
+            }
+            if (self.battlegroup < 7)
+            {
+                global.battlegroup = 40
+            }
+            if (self.battlegroup < 4)
+            {
+                global.battlegroup = 54
+            }
+            if (global.flag[progress_water_battles] == 0)
+            {
+                global.battlegroup = 40
+            }
+            if (global.flag[progress_water_battles] == 1)
+            {
+                global.battlegroup = 43
+            }
+            if (global.flag[progress_water_battles] == 2)
+            {
+                global.battlegroup = 53
+            }
+            global.flag[progress_water_battles] = global.flag[progress_water_battles] + 1
+            if (self.alldead == 2)
+            {
+                global.battlegroup = 19
+            }
+            if (self.alldead == 1)
+            {
+                global.flag[genocide_water] = 1
+                global.battlegroup = 19
+                self.alldead = 2
+            }
+            else 
+            {
+                instance_create(0, 0, obj_battleblcon)
+                if (self.desto == 1)
+                {
+                    instance_destroy()
+                }
+            }
+        }
+    }
+    else 
+    {
+        self.steps = 0
+    }
+}
+end

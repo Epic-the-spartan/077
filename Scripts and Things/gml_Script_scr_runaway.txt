@@ -1,0 +1,37 @@
+if (global.flag[hardmode] == 0)
+{
+    self.runvalue = random(100) + 10 * global.turn
+}
+else if (global.turn == 0)
+{
+    self.runvalue = 0
+}
+if (instance_exists(obj_undyneboss))
+{
+    self.runvalue = 100
+}
+if ((global.flag[hardmode] == 0 && global.armor == 4))
+{
+    self.runvalue = 100
+}
+if (self.runvalue > 50)
+{
+    self.runaway = 1
+    snd_play(50)
+    obj_heart.hspeed = -3
+    obj_heart.sprite_index = spr_heartgtfo
+    obj_heart.image_speed = 0.5
+    OBJ_WRITER.halt = 3
+    global.xp += global.xpreward[3]
+    global.gold += global.goldreward[3]
+    self.tlvl = global.lv
+    script_execute(scr_levelup)
+    if (self.levelup == 1)
+    {
+        snd_play(49)
+    }
+    global.msc = 14
+    instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
+    global.flag[escaped_last] = 1
+    global.flag[escaped] = global.flag[escaped] + 1
+}

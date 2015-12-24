@@ -1,0 +1,97 @@
+global.flag[in_battle] = 1
+if (global.encounter > self.steps)
+{
+    if (global.phasing == 0)
+    {
+        if (global.interact == 0)
+        {
+            script_execute(scr_steps, 340, 380, 40, 205)
+            if (self.room == 144)
+            {
+                script_execute(scr_steps, 1040, 680, 40, 205)
+            }
+            if (scr_murderlv() >= 12)
+            {
+                script_execute(scr_steps, 70, 120, 40, 205)
+            }
+            global.encounter = 0
+            self.battlegroup = floor(random(15))
+            if (self.battlegroup <= 15)
+            {
+                global.battlegroup = 66
+            }
+            if (self.battlegroup <= 12)
+            {
+                global.battlegroup = 64
+            }
+            if (self.battlegroup <= 9)
+            {
+                global.battlegroup = 65
+            }
+            if (((self.battlegroup == 4 || self.battlegroup == 5) || self.battlegroup == 6))
+            {
+                global.battlegroup = 68
+            }
+            if ((self.battlegroup == 3 || self.battlegroup == 2))
+            {
+                global.battlegroup = 67
+            }
+            if (self.battlegroup == 1)
+            {
+                global.battlegroup = 60
+            }
+            if (self.battlegroup == 0)
+            {
+                global.battlegroup = 59
+            }
+            if ((global.flag[disable_random_encounters] == 1 || global.flag[true_pacifist] == 1))
+            {
+                instance_destroy()
+            }
+            if (global.flag[progress_core_battles2] == 0)
+            {
+                global.battlegroup = 62
+            }
+            if (global.flag[progress_core_battles2] == 1)
+            {
+                global.battlegroup = 64
+            }
+            if (global.flag[progress_core_battles2] == 2)
+            {
+                global.battlegroup = 65
+            }
+            if (global.flag[progress_core_battles2] == 3)
+            {
+                global.battlegroup = 66
+            }
+            if (global.flag[progress_core_battles2] == 4)
+            {
+                global.battlegroup = 68
+            }
+            global.flag[progress_core_battles2] = global.flag[progress_core_battles2] + 1
+            if (self.alldead == 2)
+            {
+                global.battlegroup = 19
+            }
+            if (self.alldead == 1)
+            {
+                global.battlegroup = 19
+                self.alldead = 2
+                global.flag[genocide_core] = 1
+            }
+            else 
+            {
+                instance_create(0, 0, obj_battleblcon)
+                if (self.desto == 1)
+                {
+                    instance_destroy()
+                }
+            }
+        }
+    }
+    else 
+    {
+        self.steps = 0
+    }
+}
+end

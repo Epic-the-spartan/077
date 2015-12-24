@@ -1,0 +1,16 @@
+self.alldead = 0
+global.encounter = 0
+script_execute(scr_steps, 120, 30, 16, 203)
+if ((self.room == 57 && global.flag[toggled_snow_switch] != 0))
+{
+    script_execute(scr_steps, 220, 30, 16, 203)
+}
+if ((global.flag[kills_tundra] == 0 && global.plot > 100))
+{
+    instance_destroy()
+}
+if ((self.room == 67 && global.plot < 67))
+{
+    instance_destroy()
+}
+end

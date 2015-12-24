@@ -1,0 +1,65 @@
+if (global.encounter > self.steps)
+{
+    if (global.phasing == 0)
+    {
+        if (global.interact == 0)
+        {
+            script_execute(scr_steps, 140, 280, 16, 203)
+            global.encounter = 0
+            self.battlegroup = floor(random(15))
+            if (self.battlegroup >= 0)
+            {
+                global.battlegroup = 30
+            }
+            if (self.battlegroup >= 8)
+            {
+                global.battlegroup = 32
+            }
+            if (global.flag[progress_tundra_battles] == 0)
+            {
+                global.battlegroup = 30
+            }
+            if (global.flag[progress_tundra_battles] == 1)
+            {
+                global.battlegroup = 32
+            }
+            if ((global.flag[progress_tundra_battles] == 2 && global.plot < 42))
+            {
+                global.battlegroup = choose(30, 32)
+            }
+            if ((global.flag[progress_tundra_battles] == 2 && global.plot >= 42))
+            {
+                global.battlegroup = 24
+                global.flag[progress_tundra_battles] = 4
+            }
+            if ((scr_murderlv() >= 2 && global.flag[progress_tundra_battles] == 2))
+            {
+                global.battlegroup = 24
+                global.flag[progress_tundra_battles] = 4
+            }
+            if (global.flag[progress_tundra_battles] < 2)
+            {
+                global.flag[progress_tundra_battles] = global.flag[progress_tundra_battles] + 1
+            }
+            if (self.alldead == 2)
+            {
+                global.battlegroup = 19
+            }
+            if (self.alldead == 1)
+            {
+                global.flag[genocide_tundra] = 1
+                global.battlegroup = 19
+                self.alldead = 2
+            }
+            else 
+            {
+                instance_create(0, 0, obj_battleblcon)
+            }
+        }
+    }
+    else 
+    {
+        self.steps = 0
+    }
+}
+end

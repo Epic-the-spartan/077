@@ -1,0 +1,76 @@
+if (global.encounter > self.steps)
+{
+    if (global.phasing == 0)
+    {
+        if (global.interact == 0)
+        {
+            script_execute(scr_steps, 340, 380, 40, 205)
+            if (self.room == 144)
+            {
+                script_execute(scr_steps, 1040, 680, 40, 205)
+            }
+            global.encounter = 0
+            self.battlegroup = floor(random(15))
+            if (self.battlegroup < 15)
+            {
+                global.battlegroup = 50
+            }
+            if (self.battlegroup < 10)
+            {
+                global.battlegroup = 78
+            }
+            if (self.battlegroup < 6)
+            {
+                global.battlegroup = 77
+            }
+            if ((global.flag[disable_random_encounters] == 1 || global.flag[true_pacifist] == 1))
+            {
+                instance_destroy()
+            }
+            if (global.flag[progress_hotland_battles] == 0)
+            {
+                global.battlegroup = 51
+            }
+            if (global.flag[progress_hotland_battles] == 1)
+            {
+                global.battlegroup = 50
+            }
+            if (global.flag[progress_hotland_battles] == 2)
+            {
+                global.battlegroup = 52
+            }
+            if (global.flag[progress_hotland_battles] == 3)
+            {
+                global.battlegroup = 77
+            }
+            if (global.flag[progress_hotland_battles] == 4)
+            {
+                global.battlegroup = 78
+            }
+            global.flag[progress_hotland_battles] = global.flag[progress_hotland_battles] + 1
+            if (self.alldead == 2)
+            {
+                global.battlegroup = 19
+            }
+            if (self.alldead == 1)
+            {
+                global.flag[genocide_hotland] = 1
+                global.battlegroup = 19
+                self.alldead = 2
+            }
+            else 
+            {
+                instance_create(0, 0, obj_battleblcon)
+                if (self.desto == 1)
+                {
+                    instance_destroy()
+                }
+            }
+        }
+    }
+    else 
+    {
+        self.steps = 0
+    }
+}
+end

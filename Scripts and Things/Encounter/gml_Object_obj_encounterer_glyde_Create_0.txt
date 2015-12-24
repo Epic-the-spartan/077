@@ -1,0 +1,16 @@
+self.alldead = 0
+global.encounter = 0
+script_execute(scr_steps, 3600, 150, 16, 203)
+if ((global.flag[kills_tundra] == 0 && global.plot > 100))
+{
+    instance_destroy()
+}
+if (global.flag[true_pacifist] == 1)
+{
+    instance_destroy()
+}
+if (global.flag[check_papyrus_kitchen_again] == 1)
+{
+    instance_destroy()
+}
+end

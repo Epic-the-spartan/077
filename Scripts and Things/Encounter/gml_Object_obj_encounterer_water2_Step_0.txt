@@ -1,0 +1,64 @@
+if (global.encounter > self.steps)
+{
+    if (global.phasing == 0)
+    {
+        if (global.interact == 0)
+        {
+            script_execute(scr_steps, 640, 380, 18, 204)
+            if ((scr_murderlv() >= 10 && global.flag[spared_specific] == 0))
+            {
+                script_execute(scr_steps, 120, 50, 18, 204)
+            }
+            global.encounter = 0
+            self.battlegroup = floor(random(15))
+            if (self.battlegroup < 15)
+            {
+                global.battlegroup = 54
+            }
+            if (self.battlegroup < 10)
+            {
+                global.battlegroup = 55
+            }
+            if (self.battlegroup < 4)
+            {
+                global.battlegroup = 41
+            }
+            if (global.flag[progress_water2_battles] == 0)
+            {
+                global.battlegroup = 41
+            }
+            if (global.flag[progress_water2_battles] == 1)
+            {
+                global.battlegroup = 42
+            }
+            if (global.flag[progress_water2_battles] == 2)
+            {
+                global.battlegroup = 54
+            }
+            if (global.flag[progress_water2_battles] == 3)
+            {
+                global.battlegroup = 55
+            }
+            global.flag[progress_water2_battles] = global.flag[progress_water2_battles] + 1
+            if (self.alldead == 2)
+            {
+                global.battlegroup = 19
+            }
+            if (self.alldead == 1)
+            {
+                global.flag[genocide_water] = 1
+                global.battlegroup = 19
+                self.alldead = 2
+            }
+            else 
+            {
+                instance_create(0, 0, obj_battleblcon)
+            }
+        }
+    }
+    else 
+    {
+        self.steps = 0
+    }
+}
+end

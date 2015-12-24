@@ -1,0 +1,19 @@
+global.flag[in_battle] = 1
+self.alldead = 0
+global.encounter = 0
+self.factor = 240
+self.desto = 0
+if ((global.flag[progress_core_battles] < 2 && global.flag[progress_core_battles2] < 4))
+{
+    self.factor = 80
+}
+if (scr_murderlv() >= 12)
+{
+    self.factor = 70
+}
+script_execute(scr_steps, self.factor, 50, 40, 205)
+if (scr_enemynpc3() == 1)
+{
+    instance_destroy()
+}
+end

@@ -1,0 +1,6 @@
+self.image_yscale = 50
+if (global.flag[pushed_rock_1] == 1)
+{
+    instance_destroy()
+}
+end

@@ -1,0 +1,977 @@
+self.myself = 0
+if (global.monster[1] == 1)
+{
+    self.myself = 2
+    global.monster[2] = 1
+}
+if ((global.monster[0] == 1 && self.myself != 2))
+{
+    self.myself = 1
+    global.monster[1] = 1
+}
+if (global.monster[0] == 0)
+{
+    self.myself = 0
+    global.monster[0] = 1
+}
+if (global.monstertype[self.myself] == 1)
+{
+    global.monstername[self.myself] = 'TestFroggit'
+    global.monstermaxhp[self.myself] = 23
+    global.monsterhp[self.myself] = 23
+    global.monsteratk[self.myself] = 4
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 2
+    global.goldreward[self.myself] = 2
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 2)
+{
+    global.monstername[self.myself] = 'Dummy'
+    global.monstermaxhp[self.myself] = 15
+    global.monsterhp[self.myself] = 15
+    global.monsteratk[self.myself] = 0
+    global.monsterdef[self.myself] = -5
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 3)
+{
+    global.monstername[self.myself] = 'Froggit'
+    global.monstermaxhp[self.myself] = 20
+    global.monsterhp[self.myself] = 20
+    global.monsteratk[self.myself] = 4
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 10
+    global.goldreward[self.myself] = 20
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 4)
+{
+    global.monstername[self.myself] = 'Froggit'
+    global.monstermaxhp[self.myself] = 30
+    global.monsterhp[self.myself] = 30
+    global.monsteratk[self.myself] = 4
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 3
+    global.goldreward[self.myself] = 2
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 5)
+{
+    global.monstername[self.myself] = 'Whimsun'
+    global.monstermaxhp[self.myself] = 10
+    global.monsterhp[self.myself] = 10
+    global.monsteratk[self.myself] = 4
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 2
+    global.goldreward[self.myself] = 2
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 6)
+{
+    global.monstername[self.myself] = 'Moldsmal'
+    global.monstermaxhp[self.myself] = 50
+    global.monsterhp[self.myself] = 50
+    global.monsteratk[self.myself] = 4
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 3
+    global.goldreward[self.myself] = 3
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 7)
+{
+    global.monstername[self.myself] = 'Migosp'
+    global.monstermaxhp[self.myself] = 40
+    global.monsterhp[self.myself] = 40
+    global.monsteratk[self.myself] = 5
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 5
+    global.goldreward[self.myself] = 4
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 8)
+{
+    global.monstername[self.myself] = 'Vegetoid'
+    global.monstermaxhp[self.myself] = 72
+    global.monsterhp[self.myself] = 72
+    global.monsteratk[self.myself] = 5
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 6
+    global.goldreward[self.myself] = 1
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 9)
+{
+    global.monstername[self.myself] = 'Loox'
+    global.monstermaxhp[self.myself] = 50
+    global.monsterhp[self.myself] = 50
+    global.monsteratk[self.myself] = 5
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 7
+    global.goldreward[self.myself] = 5
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 10)
+{
+    global.monstername[self.myself] = 'Toriel'
+    global.monstermaxhp[self.myself] = 440
+    global.monsterhp[self.myself] = 440
+    global.monsteratk[self.myself] = 6
+    if (global.flag[hardmode] == 1)
+    {
+        global.monsteratk[self.myself] = 8
+    }
+    global.monsterdef[self.myself] = 1
+    if (scr_murderlv() >= 1)
+    {
+        global.monsterdef[self.myself] = -9999
+    }
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 11)
+{
+    global.monstername[self.myself] = 'Napstablook'
+    global.monstermaxhp[self.myself] = 88
+    global.monsterhp[self.myself] = 88
+    global.monsteratk[self.myself] = 5
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = -1
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 12)
+{
+    global.monstername[self.myself] = 'Moldsmal'
+    global.monstermaxhp[self.myself] = 50
+    global.monsterhp[self.myself] = 50
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 3
+    global.goldreward[self.myself] = 3
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 13)
+{
+    global.monstername[self.myself] = 'Doggo'
+    global.monstermaxhp[self.myself] = 70
+    global.monsterhp[self.myself] = 70
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 30
+    global.goldreward[self.myself] = 20
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 14)
+{
+    global.monstername[self.myself] = 'Lesser Dog'
+    global.monstermaxhp[self.myself] = 60
+    global.monsterhp[self.myself] = 60
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 18
+    global.goldreward[self.myself] = 15
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 15)
+{
+    global.monstername[self.myself] = 'Dogamy'
+    global.monstermaxhp[self.myself] = 108
+    global.monsterhp[self.myself] = 108
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 30
+    global.goldreward[self.myself] = 25
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 16)
+{
+    global.monstername[self.myself] = 'Dogaressa'
+    global.monstermaxhp[self.myself] = 108
+    global.monsterhp[self.myself] = 108
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 30
+    global.goldreward[self.myself] = 25
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 17)
+{
+    global.monstername[self.myself] = 'Greater Dog'
+    global.monstermaxhp[self.myself] = 105
+    global.monsterhp[self.myself] = 105
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 80
+    global.goldreward[self.myself] = 60
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 18)
+{
+    global.monstername[self.myself] = 'Snowdrake'
+    if (global.flag[status_snowdrake] == 2)
+    {
+        global.monstername[self.myself] = 'Chilldrake'
+    }
+    global.monstermaxhp[self.myself] = 74
+    global.monsterhp[self.myself] = 74
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 22
+    global.goldreward[self.myself] = 18
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 19)
+{
+    global.monstername[self.myself] = 'Ice Cap'
+    global.monstermaxhp[self.myself] = 48
+    global.monsterhp[self.myself] = 48
+    global.monsteratk[self.myself] = 6
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 17
+    global.goldreward[self.myself] = 17
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 20)
+{
+    global.monstername[self.myself] = 'Ice'
+    global.monstermaxhp[self.myself] = 48
+    global.monsterhp[self.myself] = 48
+    global.monsteratk[self.myself] = 0
+    global.monsterdef[self.myself] = -100
+    global.xpreward[self.myself] = 25
+    global.goldreward[self.myself] = 40
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 21)
+{
+    global.monstername[self.myself] = 'Jerry'
+    global.monstermaxhp[self.myself] = 80
+    global.monsterhp[self.myself] = 80
+    global.monsteratk[self.myself] = 1
+    global.monsterdef[self.myself] = 8
+    global.xpreward[self.myself] = 1
+    global.goldreward[self.myself] = 55
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 22)
+{
+    global.monstername[self.myself] = 'Gyftrot'
+    global.monstermaxhp[self.myself] = 114
+    global.monsterhp[self.myself] = 114
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 3
+    global.xpreward[self.myself] = 35
+    global.goldreward[self.myself] = 30
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 23)
+{
+    global.monstername[self.myself] = 'Aaron'
+    global.monstermaxhp[self.myself] = 98
+    global.monsterhp[self.myself] = 98
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 52
+    global.goldreward[self.myself] = 25
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 24)
+{
+    global.monstername[self.myself] = 'Temmie'
+    global.monstermaxhp[self.myself] = 5
+    global.monsterhp[self.myself] = 5
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = -20
+    global.xpreward[self.myself] = 40
+    global.goldreward[self.myself] = 50
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 25)
+{
+    global.monstername[self.myself] = 'Papyrus'
+    global.monstermaxhp[self.myself] = 680
+    global.monsterhp[self.myself] = 680
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 26)
+{
+    global.monstername[self.myself] = 'Moldsmal'
+    global.monstermaxhp[self.myself] = 70
+    global.monsterhp[self.myself] = 70
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 46
+    global.goldreward[self.myself] = 30
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 28)
+{
+    global.monstername[self.myself] = 'Woshua'
+    global.monstermaxhp[self.myself] = 70
+    global.monsterhp[self.myself] = 70
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 52
+    global.goldreward[self.myself] = 25
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 29)
+{
+    global.monstername[self.myself] = 'Shyren'
+    global.monstermaxhp[self.myself] = 66
+    global.monsterhp[self.myself] = 66
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 52
+    global.goldreward[self.myself] = 25
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 30)
+{
+    global.monstername[self.myself] = 'Agent'
+    global.monstermaxhp[self.myself] = 98
+    global.monsterhp[self.myself] = 98
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 52
+    global.goldreward[self.myself] = 20
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 31)
+{
+    global.monstername[self.myself] = 'Mad Dummy'
+    global.monstermaxhp[self.myself] = 200
+    global.monsterhp[self.myself] = 200
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = -40
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 32)
+{
+    global.monstername[self.myself] = 'Undyne'
+    global.monstermaxhp[self.myself] = 1500
+    global.monsterhp[self.myself] = 1500
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 33)
+{
+    global.monstername[self.myself] = 'Mettaton'
+    global.monstermaxhp[self.myself] = 9999
+    global.monsterhp[self.myself] = 9999
+    global.monsteratk[self.myself] = 10
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 34)
+{
+    global.monstername[self.myself] = 'RG 01'
+    global.monstermaxhp[self.myself] = 150
+    global.monsterhp[self.myself] = 150
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 110
+    global.goldreward[self.myself] = 60
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 35)
+{
+    global.monstername[self.myself] = 'RG 02'
+    global.monstermaxhp[self.myself] = 150
+    global.monsterhp[self.myself] = 150
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 110
+    global.goldreward[self.myself] = 60
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 36)
+{
+    global.monstername[self.myself] = 'Tsunderplane'
+    global.monstermaxhp[self.myself] = 80
+    global.monsterhp[self.myself] = 80
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 6
+    global.xpreward[self.myself] = 95
+    global.goldreward[self.myself] = 45
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 37)
+{
+    global.monstername[self.myself] = 'Vulkin'
+    global.monstermaxhp[self.myself] = 20
+    global.monsterhp[self.myself] = 20
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = -10
+    global.xpreward[self.myself] = 70
+    global.goldreward[self.myself] = 50
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 38)
+{
+    global.monstername[self.myself] = 'Pyrope'
+    global.monstermaxhp[self.myself] = 110
+    global.monsterhp[self.myself] = 110
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 80
+    global.goldreward[self.myself] = 40
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 39)
+{
+    global.monstername[self.myself] = 'Muffet'
+    global.monstermaxhp[self.myself] = 1250
+    global.monsterhp[self.myself] = 1250
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 300
+    global.goldreward[self.myself] = global.flag[spider_donations_total]
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 40)
+{
+    global.monstername[self.myself] = 'Mettaton'
+    global.monstermaxhp[self.myself] = 9999
+    global.monsterhp[self.myself] = 9999
+    global.monsteratk[self.myself] = 10
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 41)
+{
+    global.monstername[self.myself] = 'Undyne'
+    global.monstermaxhp[self.myself] = 1500
+    global.monsterhp[self.myself] = 1500
+    global.monsteratk[self.myself] = 10
+    global.monsterdef[self.myself] = 10
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 42)
+{
+    global.monstername[self.myself] = 'Madjick'
+    global.monstermaxhp[self.myself] = 190
+    global.monsterhp[self.myself] = 190
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = -1
+    global.xpreward[self.myself] = 150
+    global.goldreward[self.myself] = 120
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 43)
+{
+    global.monstername[self.myself] = 'Knight Knight'
+    global.monstermaxhp[self.myself] = 230
+    global.monsterhp[self.myself] = 230
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 180
+    global.goldreward[self.myself] = 150
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 44)
+{
+    global.monstername[self.myself] = 'Final Froggit'
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 120
+    global.goldreward[self.myself] = 80
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 45)
+{
+    global.monstername[self.myself] = 'Astigmatism'
+    global.monstermaxhp[self.myself] = 120
+    global.monsterhp[self.myself] = 120
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = -2
+    global.xpreward[self.myself] = 130
+    global.goldreward[self.myself] = 85
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 46)
+{
+    global.monstername[self.myself] = 'Whimsalot'
+    global.monstermaxhp[self.myself] = 95
+    global.monsterhp[self.myself] = 95
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = -3
+    global.xpreward[self.myself] = 110
+    global.goldreward[self.myself] = 80
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 47)
+{
+    global.monstername[self.myself] = 'Bomb'
+    global.monstermaxhp[self.myself] = 99
+    global.monsterhp[self.myself] = 99
+    global.monsteratk[self.myself] = 1
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 48)
+{
+    global.monstername[self.myself] = 'RG 03'
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 110
+    global.goldreward[self.myself] = 60
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 49)
+{
+    global.monstername[self.myself] = 'RG 04'
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 4
+    global.xpreward[self.myself] = 110
+    global.goldreward[self.myself] = 60
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 50)
+{
+    global.monstername[self.myself] = 'Mettaton'
+    global.monstermaxhp[self.myself] = 9999
+    global.monsterhp[self.myself] = 9999
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 51)
+{
+    global.monstername[self.myself] = 'Mettaton EX'
+    global.monstermaxhp[self.myself] = 1600
+    global.monsterhp[self.myself] = 1600
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 52)
+{
+    global.monstername[self.myself] = 'Asgore'
+    global.monstermaxhp[self.myself] = 3500
+    global.monsterhp[self.myself] = 3500
+    global.monsteratk[self.myself] = 10
+    global.monsterdef[self.myself] = -30
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 53)
+{
+    global.monstername[self.myself] = 'Lemon Bread'
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 9999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 54)
+{
+    global.monstername[self.myself] = ','
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 9
+    global.monsterdef[self.myself] = 9999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 55)
+{
+    global.monstername[self.myself] = 'Amalgamate'
+    global.monstermaxhp[self.myself] = 400
+    global.monsterhp[self.myself] = 400
+    global.monsteratk[self.myself] = 0
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 56)
+{
+    global.monstername[self.myself] = '     '
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 9
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 57)
+{
+    global.monstername[self.myself] = 'Amalgamate'
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 9
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 58)
+{
+    global.monstername[self.myself] = 'Lost Soul'
+    global.monstermaxhp[self.myself] = 999
+    global.monsterhp[self.myself] = 999
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 59)
+{
+    global.monstername[self.myself] = 'Lost Soul'
+    global.monstermaxhp[self.myself] = 999
+    global.monsterhp[self.myself] = 999
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 60)
+{
+    global.monstername[self.myself] = 'Lost Soul'
+    global.monstermaxhp[self.myself] = 999
+    global.monsterhp[self.myself] = 999
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 61)
+{
+    global.monstername[self.myself] = 'Lost Soul'
+    global.monstermaxhp[self.myself] = 999
+    global.monsterhp[self.myself] = 999
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 62)
+{
+    global.monstername[self.myself] = 'Lost Soul'
+    global.monstermaxhp[self.myself] = 999
+    global.monsterhp[self.myself] = 999
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 63)
+{
+    global.monstername[self.myself] = 'Lost Soul'
+    global.monstermaxhp[self.myself] = 999
+    global.monsterhp[self.myself] = 999
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 64)
+{
+    global.monstername[self.myself] = 'Monster Kid'
+    global.monstermaxhp[self.myself] = 10
+    global.monsterhp[self.myself] = 10
+    global.monsteratk[self.myself] = 1
+    global.monsterdef[self.myself] = -900
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 65)
+{
+    global.monstername[self.myself] = 'Undyne the Undying'
+    global.monstermaxhp[self.myself] = 23000
+    global.monsterhp[self.myself] = 23000
+    global.monsteratk[self.myself] = 12
+    global.monsterdef[self.myself] = 5
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 66)
+{
+    global.monstername[self.myself] = 'Glad Dummy'
+    global.monstermaxhp[self.myself] = 5
+    global.monsterhp[self.myself] = 5
+    global.monsteratk[self.myself] = 0
+    global.monsterdef[self.myself] = -5
+    global.xpreward[self.myself] = 200
+    global.goldreward[self.myself] = 100
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 67)
+{
+    global.monstername[self.myself] = 'Mettaton NEO'
+    global.monstermaxhp[self.myself] = 30000
+    global.monsterhp[self.myself] = 30000
+    global.monsteratk[self.myself] = 10
+    global.monsterdef[self.myself] = -40000
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 68)
+{
+    global.monstername[self.myself] = 'Sans'
+    global.monstermaxhp[self.myself] = 1
+    global.monsterhp[self.myself] = 1
+    global.monsteratk[self.myself] = 1
+    global.monsterdef[self.myself] = 1
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 70)
+{
+    global.monstername[self.myself] = 'Final Froggit'
+    global.monstermaxhp[self.myself] = 32
+    global.monsterhp[self.myself] = 32
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 4
+    global.goldreward[self.myself] = 2
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 71)
+{
+    global.monstername[self.myself] = 'Astigmatism'
+    global.monstermaxhp[self.myself] = 50
+    global.monsterhp[self.myself] = 50
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 2
+    global.xpreward[self.myself] = 8
+    global.goldreward[self.myself] = 6
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 72)
+{
+    global.monstername[self.myself] = 'Whimsalot'
+    global.monstermaxhp[self.myself] = 20
+    global.monsterhp[self.myself] = 20
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 0
+    global.xpreward[self.myself] = 3
+    global.goldreward[self.myself] = 4
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 73)
+{
+    global.monstername[self.myself] = 'Migospel'
+    global.monstermaxhp[self.myself] = 45
+    global.monsterhp[self.myself] = 45
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = 3
+    global.xpreward[self.myself] = 5
+    global.goldreward[self.myself] = 4
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 74)
+{
+    global.monstername[self.myself] = 'Moldessa'
+    global.monstermaxhp[self.myself] = 52
+    global.monsterhp[self.myself] = 52
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = -4
+    global.xpreward[self.myself] = 5
+    global.goldreward[self.myself] = 3
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 75)
+{
+    global.monstername[self.myself] = 'Parsnik'
+    global.monstermaxhp[self.myself] = 72
+    global.monsterhp[self.myself] = 72
+    global.monsteratk[self.myself] = 7
+    global.monsterdef[self.myself] = -2
+    global.xpreward[self.myself] = 8
+    global.goldreward[self.myself] = 2
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 76)
+{
+    global.monstername[self.myself] = 'Glyde'
+    global.monstermaxhp[self.myself] = 220
+    global.monsterhp[self.myself] = 220
+    global.monsteratk[self.myself] = 9
+    global.monsterdef[self.myself] = -20
+    global.xpreward[self.myself] = 100
+    global.goldreward[self.myself] = 140
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 80)
+{
+    global.monstername[self.myself] = 'So Sorry'
+    global.monstermaxhp[self.myself] = 1100
+    global.monsterhp[self.myself] = 1100
+    global.monsteratk[self.myself] = 9
+    global.monsterdef[self.myself] = -6
+    global.xpreward[self.myself] = 1
+    global.goldreward[self.myself] = 300
+    global.itemrewardid = 1
+    global.itemrewardchance = 50
+}
+if (global.monstertype[self.myself] == 81)
+{
+    global.monstername[self.myself] = 'Doodlebog'
+    global.monstermaxhp[self.myself] = 100
+    global.monsterhp[self.myself] = 100
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 99)
+{
+    global.monstername[self.myself] = 'Asriel Dreemurr'
+    global.monstermaxhp[self.myself] = 9999
+    global.monsterhp[self.myself] = 9999
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 9999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 100)
+{
+    global.monstername[self.myself] = 'Asriel'
+    global.monstermaxhp[self.myself] = 9999
+    global.monsterhp[self.myself] = 9999
+    global.monsteratk[self.myself] = 8
+    global.monsterdef[self.myself] = 9999
+    global.xpreward[self.myself] = 0
+    global.goldreward[self.myself] = 0
+    global.itemrewardid = 0
+    global.itemrewardchance = 0
+}
+if (global.monstertype[self.myself] == 666)
+{
+    global.monstername[self.myself] = 'Gaster'
+    global.monstermaxhp[self.myself] = 666666
+    global.monsterhp[self.myself] = 666666
+    global.monsteratk[self.myself] = 66666
+    global.monsterdef[self.myself] = 66666
+    global.xpreward[self.myself] = -6666
+    global.goldreward[self.myself] = -6666
+    global.itemrewardid = 666
+    global.itemrewardchance = 666
+}
+end
