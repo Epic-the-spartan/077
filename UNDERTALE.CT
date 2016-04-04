@@ -2,10 +2,101 @@
 <CheatTable CheatEngineTableVersion="18">
   <CheatEntries>
     <CheatEntry>
+      <ID>164</ID>
+      <Description>"Speedhack"</Description>
+      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" Activated="0" RealAddress="00000000"/>
+      <Color>80000008</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"(Speedhack) Slowdown Press ALT+Shift+Q"</Description>
+          <LastState Activated="0"/>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+luacall(speedhack_setSpeed(0.2))
+
+
+[DISABLE]
+luacall(speedhack_setSpeed(1))
+</AssemblerScript>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>81</Key>
+                <Key>16</Key>
+                <Key>18</Key>
+              </Keys>
+              <Description>(Speedhack) Half Speed</Description>
+              <ID>0</ID>
+            </Hotkey>
+          </Hotkeys>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>101</ID>
+          <Description>"(Speedhack) Skip Speed Press ALT+Shift+E"</Description>
+          <LastState Activated="0"/>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+luacall(speedhack_setSpeed(999999))
+
+
+[DISABLE]
+luacall(speedhack_setSpeed(1))
+</AssemblerScript>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>16</Key>
+                <Key>69</Key>
+                <Key>18</Key>
+              </Keys>
+              <Description>(Speedhack) 4x Speed</Description>
+              <ID>0</ID>
+            </Hotkey>
+          </Hotkeys>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>108</ID>
+          <Description>"(Speedhack) Frame Advance Press ALT+SHIFT+="</Description>
+          <LastState Activated="0"/>
+          <Color>80000008</Color>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+luacall(speedhack_setSpeed(1))
+luacall(sleep(1))
+luacall(speedhack_setSpeed(0))
+
+[DISABLE]
+luacall(speedhack_setSpeed(1))
+luacall(sleep(1))
+luacall(speedhack_setSpeed(0))
+</AssemblerScript>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>18</Key>
+                <Key>16</Key>
+                <Key>187</Key>
+              </Keys>
+              <Description>(Speedhack) 4x Speed</Description>
+              <ID>0</ID>
+            </Hotkey>
+          </Hotkeys>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
       <ID>22</ID>
       <Description>"Find Base Adress"</Description>
       <Options moHideChildren="1"/>
-      <LastState Activated="1"/>
+      <LastState Activated="0"/>
       <Color>0000FF</Color>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
@@ -21,267 +112,41 @@ unregistersymbol(_base)
 </AssemblerScript>
       <CheatEntries>
         <CheatEntry>
-          <ID>157</ID>
-          <Description>"Global.BattleGroup"</Description>
-          <LastState Value="5" Activated="1" RealAddress="0DB452B0"/>
+          <ID>199</ID>
+          <Description>"Room_Speed"</Description>
+          <LastState Value="30" Activated="0" RealAddress="0B8CC534"/>
           <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"UNDERTALE.exe"+0050F33C</Address>
           <Offsets>
-            <Offset>8</Offset>
-            <Offset>60</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>137</ID>
-          <Description>"Global.CurrentRoom"</Description>
-          <LastState Value="13" Activated="0" RealAddress="0DB44BF8"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>14</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>196</ID>
-          <Description>"Global.MSC"</Description>
-          <LastState Value="509" Activated="0" RealAddress="0DB45B70"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>30</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>F8</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>26</ID>
-          <Description>"Global.EXP"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB446D0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>4C</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>123</ID>
-          <Description>"Global.Encounter"</Description>
-          <DropDownList DescriptionOnly="1">99999999:Encounter
-0:No Encounter
-</DropDownList>
-          <LastState Value="73" Activated="0" RealAddress="0DB458A0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>D4</Offset>
-          </Offsets>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Set Value</Action>
-              <Keys>
-                <Key>16</Key>
-                <Key>221</Key>
-              </Keys>
-              <Value>99999999</Value>
-              <Description>Encounter</Description>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>27</ID>
-          <Description>"Global.Gold"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB448B0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>4</Offset>
-            <Offset>F4</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>24</ID>
-          <Description>"Global.HP"</Description>
-          <LastState Value="20" Activated="0" RealAddress="0DB449F0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>0</Offset>
-            <Offset>A8</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>25</ID>
-          <Description>"Global.MaxHP"</Description>
-          <LastState Value="20" Activated="0" RealAddress="0DB44A18"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>0</Offset>
-            <Offset>94</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>192</ID>
-          <Description>"Global.AT"</Description>
-          <LastState Value="1.54738641483636E-314" Activated="0" RealAddress="0DB444F0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>30</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>1C</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>186</ID>
-          <Description>"Global.WStr (Weapon AT)"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB455D0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>"UNDERTALE.exe"+002EBD78</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>AC</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>190</ID>
-          <Description>"Global.ADef (Armor Defense)"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB44770"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>"UNDERTALE.exe"+002EBD78</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>0</Offset>
-            <Offset>4</Offset>
-            <Offset>B4</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>23</ID>
-          <Description>"Global.LV"</Description>
-          <LastState Value="1" Activated="0" RealAddress="0DB447C0"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>FC</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>146</ID>
-          <Description>"Global.Interact"</Description>
-          <LastState Value="1" Activated="0" RealAddress="0DB45918"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
             <Offset>C</Offset>
           </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>201</ID>
+              <Description>"Framerate2???"</Description>
+              <LastState Value="30" Activated="0" RealAddress="0091A4F0"/>
+              <Color>80000008</Color>
+              <VariableType>4 Bytes</VariableType>
+              <Address>UNDERTALE.exe+51A4F0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>200</ID>
+              <Description>"Framerate1???"</Description>
+              <LastState Value="30" Activated="0" RealAddress="0090F324"/>
+              <Color>80000008</Color>
+              <VariableType>4 Bytes</VariableType>
+              <Address>UNDERTALE.exe+50F324</Address>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>126</ID>
-          <Description>"Global.Plot (V1)"</Description>
-          <LastState Value="9.2" Activated="0" RealAddress="0DB45008"/>
+          <ID>138</ID>
+          <Description>"Room"</Description>
+          <LastState Value="178" Activated="0" RealAddress="0090F300"/>
           <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>undertale.exe+002ebd78</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>18</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>129</ID>
-          <Description>"Global.Plot (V2)"</Description>
-          <LastState Value="9.2" Activated="0" RealAddress="0DB45008"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>14</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>194</ID>
-          <Description>"Global.Kills"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB455F8"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>B4</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>161</ID>
-          <Description>"Global.FileChoice"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0DB45AF8"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>EC</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>105</ID>
-          <Description>"God Mode (Enable Before Battle)"</Description>
-          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1E99:Activate
-</DropDownList>
-          <LastState Value="-1099" Activated="0" RealAddress="0DB45378"/>
-          <Color>80000008</Color>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>7C</Offset>
-          </Offsets>
+          <VariableType>4 Bytes</VariableType>
+          <Address>0090f300</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>124</ID>
@@ -299,24 +164,16 @@ unregistersymbol(_base)
           </Offsets>
         </CheatEntry>
         <CheatEntry>
-          <ID>138</ID>
-          <Description>"Room"</Description>
-          <LastState Value="13" Activated="0" RealAddress="0090F300"/>
-          <Color>80000008</Color>
-          <VariableType>4 Bytes</VariableType>
-          <Address>0090f300</Address>
-        </CheatEntry>
-        <CheatEntry>
           <ID>173</ID>
           <Description>"Inventory Editor (Activate This To Open)"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="" Activated="1" RealAddress="00000000"/>
+          <LastState Value="" Activated="0" RealAddress="00000000"/>
           <Color>80000008</Color>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>174</ID>
-              <Description>"Slot 1"</Description>
+              <ID>181</ID>
+              <Description>"Slot 8"</Description>
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
 1:Monster Candy
 2:Croquet Roll
@@ -383,422 +240,12 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="27" Activated="1" RealAddress="0D671518"/>
+              <LastState Value="0" Activated="0" RealAddress="0B855E28"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
-                <Offset>0</Offset>
-                <Offset>4</Offset>
-                <Offset>4</Offset>
-                <Offset>8</Offset>
-                <Offset>4</Offset>
-                <Offset>24</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>175</ID>
-              <Description>"Slot 2"</Description>
-              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
-1:Monster Candy
-2:Croquet Roll
-3:Stick
-4:Bandage
-5:Rock Candy
-6:Pumpkin Rings
-7:Spider Donut
-8:Stoic Onion
-9:Ghost Fruit
-10:Spider Cider
-11:Butterscotch Pie
-12:Faded Ribbon
-13:Toy Knife
-14:Tough Glove
-15:Manly Bandanna
-16:Snowman Piece
-17:Nice Cream
-18:Puppydough Icecream
-19:Bisicle
-20:Unisicle
-21:Cinnamon Bun
-22:Temmie Flakes
-23:Abandoned Quiche
-24:Old Tutu
-25:Ballet Shoes
-26:Punch Card
-27:Annoying Dog
-28:Dog Salad
-29:Dog Residue
-30:Dog Residue
-31:Dog Residue
-32:Dog Residue
-33:Dog Residue
-34:Dog Residue
-35:Astronaut Food
-36:Instant Noodles
-37:Crab Apple
-38:Hot Dog...?
-39:Hot Cat
-40:Glamburger
-41:Sea Tea
-42:Starfait
-43:Legendary Hero
-44:Cloudy Glasses
-45:Torn Notebook
-46:Stained Apron
-47:Burnt Pan
-48:Cowboy Hat
-49:Empty Gun
-50:Heart Locket
-51:Worn Dagger
-52:Real Knife
-53:The Locket
-54:Bad Memory
-55:Dream
-56:Undyne's Letter
-57:Undyne's Letter EX
-58:Popato Chisps
-59:Junk Food
-60:Mystery Key
-61:Face Steak
-62:Hush Puppy
-63:Snail Pie
-64:temy armor
-</DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671528"/>
-              <Color>80000008</Color>
-              <VariableType>Double</VariableType>
-              <Address>_base</Address>
-              <Offsets>
-                <Offset>10</Offset>
-                <Offset>4</Offset>
-                <Offset>4</Offset>
-                <Offset>8</Offset>
-                <Offset>4</Offset>
-                <Offset>24</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>176</ID>
-              <Description>"Slot 3"</Description>
-              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
-1:Monster Candy
-2:Croquet Roll
-3:Stick
-4:Bandage
-5:Rock Candy
-6:Pumpkin Rings
-7:Spider Donut
-8:Stoic Onion
-9:Ghost Fruit
-10:Spider Cider
-11:Butterscotch Pie
-12:Faded Ribbon
-13:Toy Knife
-14:Tough Glove
-15:Manly Bandanna
-16:Snowman Piece
-17:Nice Cream
-18:Puppydough Icecream
-19:Bisicle
-20:Unisicle
-21:Cinnamon Bun
-22:Temmie Flakes
-23:Abandoned Quiche
-24:Old Tutu
-25:Ballet Shoes
-26:Punch Card
-27:Annoying Dog
-28:Dog Salad
-29:Dog Residue
-30:Dog Residue
-31:Dog Residue
-32:Dog Residue
-33:Dog Residue
-34:Dog Residue
-35:Astronaut Food
-36:Instant Noodles
-37:Crab Apple
-38:Hot Dog...?
-39:Hot Cat
-40:Glamburger
-41:Sea Tea
-42:Starfait
-43:Legendary Hero
-44:Cloudy Glasses
-45:Torn Notebook
-46:Stained Apron
-47:Burnt Pan
-48:Cowboy Hat
-49:Empty Gun
-50:Heart Locket
-51:Worn Dagger
-52:Real Knife
-53:The Locket
-54:Bad Memory
-55:Dream
-56:Undyne's Letter
-57:Undyne's Letter EX
-58:Popato Chisps
-59:Junk Food
-60:Mystery Key
-61:Face Steak
-62:Hush Puppy
-63:Snail Pie
-64:temy armor
-</DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671538"/>
-              <Color>80000008</Color>
-              <VariableType>Double</VariableType>
-              <Address>_base</Address>
-              <Offsets>
-                <Offset>20</Offset>
-                <Offset>4</Offset>
-                <Offset>4</Offset>
-                <Offset>8</Offset>
-                <Offset>4</Offset>
-                <Offset>24</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>177</ID>
-              <Description>"Slot 4"</Description>
-              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
-1:Monster Candy
-2:Croquet Roll
-3:Stick
-4:Bandage
-5:Rock Candy
-6:Pumpkin Rings
-7:Spider Donut
-8:Stoic Onion
-9:Ghost Fruit
-10:Spider Cider
-11:Butterscotch Pie
-12:Faded Ribbon
-13:Toy Knife
-14:Tough Glove
-15:Manly Bandanna
-16:Snowman Piece
-17:Nice Cream
-18:Puppydough Icecream
-19:Bisicle
-20:Unisicle
-21:Cinnamon Bun
-22:Temmie Flakes
-23:Abandoned Quiche
-24:Old Tutu
-25:Ballet Shoes
-26:Punch Card
-27:Annoying Dog
-28:Dog Salad
-29:Dog Residue
-30:Dog Residue
-31:Dog Residue
-32:Dog Residue
-33:Dog Residue
-34:Dog Residue
-35:Astronaut Food
-36:Instant Noodles
-37:Crab Apple
-38:Hot Dog...?
-39:Hot Cat
-40:Glamburger
-41:Sea Tea
-42:Starfait
-43:Legendary Hero
-44:Cloudy Glasses
-45:Torn Notebook
-46:Stained Apron
-47:Burnt Pan
-48:Cowboy Hat
-49:Empty Gun
-50:Heart Locket
-51:Worn Dagger
-52:Real Knife
-53:The Locket
-54:Bad Memory
-55:Dream
-56:Undyne's Letter
-57:Undyne's Letter EX
-58:Popato Chisps
-59:Junk Food
-60:Mystery Key
-61:Face Steak
-62:Hush Puppy
-63:Snail Pie
-64:temy armor
-</DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671548"/>
-              <Color>80000008</Color>
-              <VariableType>Double</VariableType>
-              <Address>_base</Address>
-              <Offsets>
-                <Offset>30</Offset>
-                <Offset>4</Offset>
-                <Offset>4</Offset>
-                <Offset>8</Offset>
-                <Offset>4</Offset>
-                <Offset>24</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>178</ID>
-              <Description>"Slot 5"</Description>
-              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
-1:Monster Candy
-2:Croquet Roll
-3:Stick
-4:Bandage
-5:Rock Candy
-6:Pumpkin Rings
-7:Spider Donut
-8:Stoic Onion
-9:Ghost Fruit
-10:Spider Cider
-11:Butterscotch Pie
-12:Faded Ribbon
-13:Toy Knife
-14:Tough Glove
-15:Manly Bandanna
-16:Snowman Piece
-17:Nice Cream
-18:Puppydough Icecream
-19:Bisicle
-20:Unisicle
-21:Cinnamon Bun
-22:Temmie Flakes
-23:Abandoned Quiche
-24:Old Tutu
-25:Ballet Shoes
-26:Punch Card
-27:Annoying Dog
-28:Dog Salad
-29:Dog Residue
-30:Dog Residue
-31:Dog Residue
-32:Dog Residue
-33:Dog Residue
-34:Dog Residue
-35:Astronaut Food
-36:Instant Noodles
-37:Crab Apple
-38:Hot Dog...?
-39:Hot Cat
-40:Glamburger
-41:Sea Tea
-42:Starfait
-43:Legendary Hero
-44:Cloudy Glasses
-45:Torn Notebook
-46:Stained Apron
-47:Burnt Pan
-48:Cowboy Hat
-49:Empty Gun
-50:Heart Locket
-51:Worn Dagger
-52:Real Knife
-53:The Locket
-54:Bad Memory
-55:Dream
-56:Undyne's Letter
-57:Undyne's Letter EX
-58:Popato Chisps
-59:Junk Food
-60:Mystery Key
-61:Face Steak
-62:Hush Puppy
-63:Snail Pie
-64:temy armor
-</DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671558"/>
-              <Color>80000008</Color>
-              <VariableType>Double</VariableType>
-              <Address>_base</Address>
-              <Offsets>
-                <Offset>40</Offset>
-                <Offset>4</Offset>
-                <Offset>4</Offset>
-                <Offset>8</Offset>
-                <Offset>4</Offset>
-                <Offset>24</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>179</ID>
-              <Description>"Slot 6"</Description>
-              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
-1:Monster Candy
-2:Croquet Roll
-3:Stick
-4:Bandage
-5:Rock Candy
-6:Pumpkin Rings
-7:Spider Donut
-8:Stoic Onion
-9:Ghost Fruit
-10:Spider Cider
-11:Butterscotch Pie
-12:Faded Ribbon
-13:Toy Knife
-14:Tough Glove
-15:Manly Bandanna
-16:Snowman Piece
-17:Nice Cream
-18:Puppydough Icecream
-19:Bisicle
-20:Unisicle
-21:Cinnamon Bun
-22:Temmie Flakes
-23:Abandoned Quiche
-24:Old Tutu
-25:Ballet Shoes
-26:Punch Card
-27:Annoying Dog
-28:Dog Salad
-29:Dog Residue
-30:Dog Residue
-31:Dog Residue
-32:Dog Residue
-33:Dog Residue
-34:Dog Residue
-35:Astronaut Food
-36:Instant Noodles
-37:Crab Apple
-38:Hot Dog...?
-39:Hot Cat
-40:Glamburger
-41:Sea Tea
-42:Starfait
-43:Legendary Hero
-44:Cloudy Glasses
-45:Torn Notebook
-46:Stained Apron
-47:Burnt Pan
-48:Cowboy Hat
-49:Empty Gun
-50:Heart Locket
-51:Worn Dagger
-52:Real Knife
-53:The Locket
-54:Bad Memory
-55:Dream
-56:Undyne's Letter
-57:Undyne's Letter EX
-58:Popato Chisps
-59:Junk Food
-60:Mystery Key
-61:Face Steak
-62:Hush Puppy
-63:Snail Pie
-64:temy armor
-</DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671568"/>
-              <Color>80000008</Color>
-              <VariableType>Double</VariableType>
-              <Address>_base</Address>
-              <Offsets>
-                <Offset>50</Offset>
+                <Offset>70</Offset>
                 <Offset>4</Offset>
                 <Offset>4</Offset>
                 <Offset>8</Offset>
@@ -875,7 +322,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671578"/>
+              <LastState Value="0" Activated="0" RealAddress="0B855E18"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
@@ -889,8 +336,8 @@ unregistersymbol(_base)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>181</ID>
-              <Description>"Slot 8"</Description>
+              <ID>179</ID>
+              <Description>"Slot 6"</Description>
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
 1:Monster Candy
 2:Croquet Roll
@@ -957,12 +404,422 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0D671588"/>
+              <LastState Value="0" Activated="0" RealAddress="0B855E08"/>
               <Color>80000008</Color>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
-                <Offset>70</Offset>
+                <Offset>50</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>24</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>178</ID>
+              <Description>"Slot 5"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
+1:Monster Candy
+2:Croquet Roll
+3:Stick
+4:Bandage
+5:Rock Candy
+6:Pumpkin Rings
+7:Spider Donut
+8:Stoic Onion
+9:Ghost Fruit
+10:Spider Cider
+11:Butterscotch Pie
+12:Faded Ribbon
+13:Toy Knife
+14:Tough Glove
+15:Manly Bandanna
+16:Snowman Piece
+17:Nice Cream
+18:Puppydough Icecream
+19:Bisicle
+20:Unisicle
+21:Cinnamon Bun
+22:Temmie Flakes
+23:Abandoned Quiche
+24:Old Tutu
+25:Ballet Shoes
+26:Punch Card
+27:Annoying Dog
+28:Dog Salad
+29:Dog Residue
+30:Dog Residue
+31:Dog Residue
+32:Dog Residue
+33:Dog Residue
+34:Dog Residue
+35:Astronaut Food
+36:Instant Noodles
+37:Crab Apple
+38:Hot Dog...?
+39:Hot Cat
+40:Glamburger
+41:Sea Tea
+42:Starfait
+43:Legendary Hero
+44:Cloudy Glasses
+45:Torn Notebook
+46:Stained Apron
+47:Burnt Pan
+48:Cowboy Hat
+49:Empty Gun
+50:Heart Locket
+51:Worn Dagger
+52:Real Knife
+53:The Locket
+54:Bad Memory
+55:Dream
+56:Undyne's Letter
+57:Undyne's Letter EX
+58:Popato Chisps
+59:Junk Food
+60:Mystery Key
+61:Face Steak
+62:Hush Puppy
+63:Snail Pie
+64:temy armor
+</DropDownList>
+              <LastState Value="22" Activated="0" RealAddress="0B855DF8"/>
+              <Color>80000008</Color>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>40</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>24</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>177</ID>
+              <Description>"Slot 4"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
+1:Monster Candy
+2:Croquet Roll
+3:Stick
+4:Bandage
+5:Rock Candy
+6:Pumpkin Rings
+7:Spider Donut
+8:Stoic Onion
+9:Ghost Fruit
+10:Spider Cider
+11:Butterscotch Pie
+12:Faded Ribbon
+13:Toy Knife
+14:Tough Glove
+15:Manly Bandanna
+16:Snowman Piece
+17:Nice Cream
+18:Puppydough Icecream
+19:Bisicle
+20:Unisicle
+21:Cinnamon Bun
+22:Temmie Flakes
+23:Abandoned Quiche
+24:Old Tutu
+25:Ballet Shoes
+26:Punch Card
+27:Annoying Dog
+28:Dog Salad
+29:Dog Residue
+30:Dog Residue
+31:Dog Residue
+32:Dog Residue
+33:Dog Residue
+34:Dog Residue
+35:Astronaut Food
+36:Instant Noodles
+37:Crab Apple
+38:Hot Dog...?
+39:Hot Cat
+40:Glamburger
+41:Sea Tea
+42:Starfait
+43:Legendary Hero
+44:Cloudy Glasses
+45:Torn Notebook
+46:Stained Apron
+47:Burnt Pan
+48:Cowboy Hat
+49:Empty Gun
+50:Heart Locket
+51:Worn Dagger
+52:Real Knife
+53:The Locket
+54:Bad Memory
+55:Dream
+56:Undyne's Letter
+57:Undyne's Letter EX
+58:Popato Chisps
+59:Junk Food
+60:Mystery Key
+61:Face Steak
+62:Hush Puppy
+63:Snail Pie
+64:temy armor
+</DropDownList>
+              <LastState Value="3" Activated="0" RealAddress="0B855DE8"/>
+              <Color>80000008</Color>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>30</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>24</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>176</ID>
+              <Description>"Slot 3"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
+1:Monster Candy
+2:Croquet Roll
+3:Stick
+4:Bandage
+5:Rock Candy
+6:Pumpkin Rings
+7:Spider Donut
+8:Stoic Onion
+9:Ghost Fruit
+10:Spider Cider
+11:Butterscotch Pie
+12:Faded Ribbon
+13:Toy Knife
+14:Tough Glove
+15:Manly Bandanna
+16:Snowman Piece
+17:Nice Cream
+18:Puppydough Icecream
+19:Bisicle
+20:Unisicle
+21:Cinnamon Bun
+22:Temmie Flakes
+23:Abandoned Quiche
+24:Old Tutu
+25:Ballet Shoes
+26:Punch Card
+27:Annoying Dog
+28:Dog Salad
+29:Dog Residue
+30:Dog Residue
+31:Dog Residue
+32:Dog Residue
+33:Dog Residue
+34:Dog Residue
+35:Astronaut Food
+36:Instant Noodles
+37:Crab Apple
+38:Hot Dog...?
+39:Hot Cat
+40:Glamburger
+41:Sea Tea
+42:Starfait
+43:Legendary Hero
+44:Cloudy Glasses
+45:Torn Notebook
+46:Stained Apron
+47:Burnt Pan
+48:Cowboy Hat
+49:Empty Gun
+50:Heart Locket
+51:Worn Dagger
+52:Real Knife
+53:The Locket
+54:Bad Memory
+55:Dream
+56:Undyne's Letter
+57:Undyne's Letter EX
+58:Popato Chisps
+59:Junk Food
+60:Mystery Key
+61:Face Steak
+62:Hush Puppy
+63:Snail Pie
+64:temy armor
+</DropDownList>
+              <LastState Value="16" Activated="0" RealAddress="0B855DD8"/>
+              <Color>80000008</Color>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>20</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>24</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>175</ID>
+              <Description>"Slot 2"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
+1:Monster Candy
+2:Croquet Roll
+3:Stick
+4:Bandage
+5:Rock Candy
+6:Pumpkin Rings
+7:Spider Donut
+8:Stoic Onion
+9:Ghost Fruit
+10:Spider Cider
+11:Butterscotch Pie
+12:Faded Ribbon
+13:Toy Knife
+14:Tough Glove
+15:Manly Bandanna
+16:Snowman Piece
+17:Nice Cream
+18:Puppydough Icecream
+19:Bisicle
+20:Unisicle
+21:Cinnamon Bun
+22:Temmie Flakes
+23:Abandoned Quiche
+24:Old Tutu
+25:Ballet Shoes
+26:Punch Card
+27:Annoying Dog
+28:Dog Salad
+29:Dog Residue
+30:Dog Residue
+31:Dog Residue
+32:Dog Residue
+33:Dog Residue
+34:Dog Residue
+35:Astronaut Food
+36:Instant Noodles
+37:Crab Apple
+38:Hot Dog...?
+39:Hot Cat
+40:Glamburger
+41:Sea Tea
+42:Starfait
+43:Legendary Hero
+44:Cloudy Glasses
+45:Torn Notebook
+46:Stained Apron
+47:Burnt Pan
+48:Cowboy Hat
+49:Empty Gun
+50:Heart Locket
+51:Worn Dagger
+52:Real Knife
+53:The Locket
+54:Bad Memory
+55:Dream
+56:Undyne's Letter
+57:Undyne's Letter EX
+58:Popato Chisps
+59:Junk Food
+60:Mystery Key
+61:Face Steak
+62:Hush Puppy
+63:Snail Pie
+64:temy armor
+</DropDownList>
+              <LastState Value="11" Activated="0" RealAddress="0B855DC8"/>
+              <Color>80000008</Color>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>10</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>24</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>174</ID>
+              <Description>"Slot 1"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
+1:Monster Candy
+2:Croquet Roll
+3:Stick
+4:Bandage
+5:Rock Candy
+6:Pumpkin Rings
+7:Spider Donut
+8:Stoic Onion
+9:Ghost Fruit
+10:Spider Cider
+11:Butterscotch Pie
+12:Faded Ribbon
+13:Toy Knife
+14:Tough Glove
+15:Manly Bandanna
+16:Snowman Piece
+17:Nice Cream
+18:Puppydough Icecream
+19:Bisicle
+20:Unisicle
+21:Cinnamon Bun
+22:Temmie Flakes
+23:Abandoned Quiche
+24:Old Tutu
+25:Ballet Shoes
+26:Punch Card
+27:Annoying Dog
+28:Dog Salad
+29:Dog Residue
+30:Dog Residue
+31:Dog Residue
+32:Dog Residue
+33:Dog Residue
+34:Dog Residue
+35:Astronaut Food
+36:Instant Noodles
+37:Crab Apple
+38:Hot Dog...?
+39:Hot Cat
+40:Glamburger
+41:Sea Tea
+42:Starfait
+43:Legendary Hero
+44:Cloudy Glasses
+45:Torn Notebook
+46:Stained Apron
+47:Burnt Pan
+48:Cowboy Hat
+49:Empty Gun
+50:Heart Locket
+51:Worn Dagger
+52:Real Knife
+53:The Locket
+54:Bad Memory
+55:Dream
+56:Undyne's Letter
+57:Undyne's Letter EX
+58:Popato Chisps
+59:Junk Food
+60:Mystery Key
+61:Face Steak
+62:Hush Puppy
+63:Snail Pie
+64:temy armor
+</DropDownList>
+              <LastState Value="7" Activated="0" RealAddress="0B855DB8"/>
+              <Color>80000008</Color>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>0</Offset>
                 <Offset>4</Offset>
                 <Offset>4</Offset>
                 <Offset>8</Offset>
@@ -972,96 +829,278 @@ unregistersymbol(_base)
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>164</ID>
-      <Description>"Speedhack"</Description>
-      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" Activated="0" RealAddress="00000000"/>
-      <Color>80000008</Color>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
         <CheatEntry>
-          <ID>108</ID>
-          <Description>"(Speedhack) Frame Advance Press ALT+SHIFT+="</Description>
-          <LastState Activated="0"/>
+          <ID>105</ID>
+          <Description>"God Mode (Enable Before Battle)"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1E99:Activate
+</DropDownList>
+          <LastState Value="0" Activated="0" RealAddress="0B939060"/>
           <Color>80000008</Color>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
-luacall(speedhack_setSpeed(1))
-luacall(sleep(1))
-luacall(speedhack_setSpeed(0))
-
-[DISABLE]
-luacall(speedhack_setSpeed(1))
-luacall(sleep(1))
-luacall(speedhack_setSpeed(0))
-</AssemblerScript>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>7C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>186</ID>
+          <Description>"Global.WStr (Weapon AT)"</Description>
+          <LastState Value="2" Activated="0" RealAddress="0B9392E0"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>"UNDERTALE.exe"+002EBD78</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>0</Offset>
+            <Offset>AC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>129</ID>
+          <Description>"Global.Plot (V2)"</Description>
+          <LastState Value="119" Activated="0" RealAddress="0B938B88"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>14</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>126</ID>
+          <Description>"Global.Plot (V1)"</Description>
+          <LastState Value="119" Activated="0" RealAddress="0B938B88"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>undertale.exe+002ebd78</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>18</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"Global.MaxHP"</Description>
+          <LastState Value="20" Activated="0" RealAddress="0B938728"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>0</Offset>
+            <Offset>0</Offset>
+            <Offset>94</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>196</ID>
+          <Description>"Global.MSC"</Description>
+          <LastState Value="0" Activated="0" RealAddress="0B939B28"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>100</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID>
+          <Description>"Global.LV"</Description>
+          <LastState Value="1" Activated="0" RealAddress="0B938520"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>0</Offset>
+            <Offset>FC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>194</ID>
+          <Description>"Global.Kills"</Description>
+          <LastState Value="0" Activated="0" RealAddress="0B9394C0"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>0</Offset>
+            <Offset>B4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>146</ID>
+          <Description>"Global.Interact"</Description>
+          <LastState Value="0" Activated="0" RealAddress="0B9393F8"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>C</Offset>
+          </Offsets>
           <Hotkeys>
             <Hotkey>
-              <Action>Toggle Activation</Action>
+              <Action>Set Value</Action>
               <Keys>
-                <Key>18</Key>
-                <Key>16</Key>
-                <Key>187</Key>
+                <Key>106</Key>
+                <Key>109</Key>
               </Keys>
-              <Description>(Speedhack) 4x Speed</Description>
+              <Value>0</Value>
+              <Description>Unfreeze Player</Description>
               <ID>0</ID>
             </Hotkey>
           </Hotkeys>
         </CheatEntry>
         <CheatEntry>
-          <ID>101</ID>
-          <Description>"(Speedhack) Skip Speed Press ALT+Shift+E"</Description>
-          <LastState Activated="0"/>
+          <ID>24</ID>
+          <Description>"Global.HP"</Description>
+          <LastState Value="20" Activated="0" RealAddress="0B9384A8"/>
           <Color>80000008</Color>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
-luacall(speedhack_setSpeed(999999))
-
-
-[DISABLE]
-luacall(speedhack_setSpeed(1))
-</AssemblerScript>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>0</Offset>
+            <Offset>0</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
           <Hotkeys>
             <Hotkey>
-              <Action>Toggle Activation</Action>
+              <Action>Set Value</Action>
               <Keys>
-                <Key>16</Key>
-                <Key>69</Key>
-                <Key>18</Key>
+                <Key>111</Key>
+                <Key>109</Key>
+                <Key>106</Key>
               </Keys>
-              <Description>(Speedhack) 4x Speed</Description>
+              <Value>0</Value>
               <ID>0</ID>
             </Hotkey>
           </Hotkeys>
         </CheatEntry>
         <CheatEntry>
-          <ID>1</ID>
-          <Description>"(Speedhack) Slowdown Press ALT+Shift+Q"</Description>
-          <LastState Activated="0"/>
+          <ID>27</ID>
+          <Description>"Global.Gold"</Description>
+          <LastState Value="559" Activated="0" RealAddress="0B9387C8"/>
           <Color>80000008</Color>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
-luacall(speedhack_setSpeed(0.2))
-
-
-[DISABLE]
-luacall(speedhack_setSpeed(1))
-</AssemblerScript>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>0</Offset>
+            <Offset>4</Offset>
+            <Offset>F4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>161</ID>
+          <Description>"Global.FileChoice"</Description>
+          <LastState Value="0" Activated="0" RealAddress="0B939998"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>EC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>123</ID>
+          <Description>"Global.Encounter"</Description>
+          <DropDownList DescriptionOnly="1">99999999:Encounter
+0:No Encounter
+</DropDownList>
+          <LastState Value="0" Activated="0" RealAddress="0B939510"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>4</Offset>
+            <Offset>D4</Offset>
+          </Offsets>
           <Hotkeys>
             <Hotkey>
-              <Action>Toggle Activation</Action>
+              <Action>Set Value</Action>
               <Keys>
-                <Key>81</Key>
                 <Key>16</Key>
-                <Key>18</Key>
+                <Key>221</Key>
               </Keys>
-              <Description>(Speedhack) Half Speed</Description>
+              <Value>99999999</Value>
+              <Description>Encounter</Description>
               <ID>0</ID>
             </Hotkey>
           </Hotkeys>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"Global.EXP"</Description>
+          <LastState Value="0" Activated="0" RealAddress="0B938818"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>4</Offset>
+            <Offset>0</Offset>
+            <Offset>4C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>137</ID>
+          <Description>"Global.CurrentRoom"</Description>
+          <LastState Value="178" Activated="0" RealAddress="0B938930"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>14</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>157</ID>
+          <Description>"Global.BattleGroup"</Description>
+          <LastState Value="3" Activated="0" RealAddress="0B938EF8"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>_base</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>60</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>190</ID>
+          <Description>"Global.ADef (Armor Defense)"</Description>
+          <LastState Value="0" Activated="0" RealAddress="0B938570"/>
+          <Color>80000008</Color>
+          <VariableType>Double</VariableType>
+          <Address>"UNDERTALE.exe"+002EBD78</Address>
+          <Offsets>
+            <Offset>8</Offset>
+            <Offset>0</Offset>
+            <Offset>0</Offset>
+            <Offset>4</Offset>
+            <Offset>B4</Offset>
+          </Offsets>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -1073,10 +1112,6 @@ luacall(speedhack_setSpeed(1))
     </SymbolEntry>
     <SymbolEntry>
       <Name>UTBASE</Name>
-      <Address>006EBD78</Address>
-    </SymbolEntry>
-    <SymbolEntry>
-      <Name>_base</Name>
       <Address>006EBD78</Address>
     </SymbolEntry>
   </UserdefinedSymbols>
