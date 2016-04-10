@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CheatTable CheatEngineTableVersion="18">
+<CheatTable CheatEngineTableVersion="19">
   <CheatEntries>
     <CheatEntry>
       <ID>164</ID>
       <Description>"Speedhack"</Description>
       <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" Activated="0" RealAddress="00000000"/>
-      <Color>80000008</Color>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>1</ID>
           <Description>"(Speedhack) Slowdown Press ALT+Shift+Q"</Description>
-          <LastState Activated="0"/>
-          <Color>80000008</Color>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 luacall(speedhack_setSpeed(0.2))
@@ -38,8 +36,7 @@ luacall(speedhack_setSpeed(1))
         <CheatEntry>
           <ID>101</ID>
           <Description>"(Speedhack) Skip Speed Press ALT+Shift+E"</Description>
-          <LastState Activated="0"/>
-          <Color>80000008</Color>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 luacall(speedhack_setSpeed(999999))
@@ -64,8 +61,7 @@ luacall(speedhack_setSpeed(1))
         <CheatEntry>
           <ID>108</ID>
           <Description>"(Speedhack) Frame Advance Press ALT+SHIFT+="</Description>
-          <LastState Activated="0"/>
-          <Color>80000008</Color>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 luacall(speedhack_setSpeed(1))
@@ -96,7 +92,7 @@ luacall(speedhack_setSpeed(0))
       <ID>22</ID>
       <Description>"Find Base Adress"</Description>
       <Options moHideChildren="1"/>
-      <LastState Activated="0"/>
+      <LastState Activated="1"/>
       <Color>0000FF</Color>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
@@ -114,8 +110,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>199</ID>
           <Description>"Room_Speed"</Description>
-          <LastState Value="30" Activated="0" RealAddress="0B8CC534"/>
-          <Color>80000008</Color>
+          <LastState Value="30" RealAddress="0B90E36C"/>
           <VariableType>4 Bytes</VariableType>
           <Address>"UNDERTALE.exe"+0050F33C</Address>
           <Offsets>
@@ -125,16 +120,14 @@ unregistersymbol(_base)
             <CheatEntry>
               <ID>201</ID>
               <Description>"Framerate2???"</Description>
-              <LastState Value="30" Activated="0" RealAddress="0091A4F0"/>
-              <Color>80000008</Color>
+              <LastState Value="30" RealAddress="0091A4F0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>UNDERTALE.exe+51A4F0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>200</ID>
               <Description>"Framerate1???"</Description>
-              <LastState Value="30" Activated="0" RealAddress="0090F324"/>
-              <Color>80000008</Color>
+              <LastState Value="30" RealAddress="0090F324"/>
               <VariableType>4 Bytes</VariableType>
               <Address>UNDERTALE.exe+50F324</Address>
             </CheatEntry>
@@ -143,16 +136,13 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>138</ID>
           <Description>"Room"</Description>
-          <LastState Value="178" Activated="0" RealAddress="0090F300"/>
-          <Color>80000008</Color>
+          <LastState Value="15" RealAddress="0090F300"/>
           <VariableType>4 Bytes</VariableType>
           <Address>0090f300</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>124</ID>
           <Description>"Omega Flowey Player HP"</Description>
-          <LastState Value="??" Activated="0" RealAddress="00000000"/>
-          <Color>80000008</Color>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -167,8 +157,7 @@ unregistersymbol(_base)
           <ID>173</ID>
           <Description>"Inventory Editor (Activate This To Open)"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="" Activated="0" RealAddress="00000000"/>
-          <Color>80000008</Color>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
@@ -240,8 +229,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0B855E28"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6C28"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -322,8 +310,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0B855E18"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6C18"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -404,8 +391,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="0" Activated="0" RealAddress="0B855E08"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6C08"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -486,8 +472,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="22" Activated="0" RealAddress="0B855DF8"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6BF8"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -568,8 +553,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="3" Activated="0" RealAddress="0B855DE8"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6BE8"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -650,8 +634,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="16" Activated="0" RealAddress="0B855DD8"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6BD8"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -732,8 +715,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="11" Activated="0" RealAddress="0B855DC8"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6BC8"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -814,8 +796,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
-              <LastState Value="7" Activated="0" RealAddress="0B855DB8"/>
-              <Color>80000008</Color>
+              <LastState Value="0" RealAddress="0B8A6BB8"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -834,8 +815,7 @@ unregistersymbol(_base)
           <Description>"God Mode (Enable Before Battle)"</Description>
           <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1E99:Activate
 </DropDownList>
-          <LastState Value="0" Activated="0" RealAddress="0B939060"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B971800"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -849,8 +829,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>186</ID>
           <Description>"Global.WStr (Weapon AT)"</Description>
-          <LastState Value="2" Activated="0" RealAddress="0B9392E0"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B971B98"/>
           <VariableType>Double</VariableType>
           <Address>"UNDERTALE.exe"+002EBD78</Address>
           <Offsets>
@@ -864,8 +843,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>129</ID>
           <Description>"Global.Plot (V2)"</Description>
-          <LastState Value="119" Activated="0" RealAddress="0B938B88"/>
-          <Color>80000008</Color>
+          <LastState Value="9.8" RealAddress="0B971468"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -877,8 +855,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>126</ID>
           <Description>"Global.Plot (V1)"</Description>
-          <LastState Value="119" Activated="0" RealAddress="0B938B88"/>
-          <Color>80000008</Color>
+          <LastState Value="9.8" RealAddress="0B971468"/>
           <VariableType>Double</VariableType>
           <Address>undertale.exe+002ebd78</Address>
           <Offsets>
@@ -889,8 +866,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>25</ID>
           <Description>"Global.MaxHP"</Description>
-          <LastState Value="20" Activated="0" RealAddress="0B938728"/>
-          <Color>80000008</Color>
+          <LastState Value="20" RealAddress="0B970FB8"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -903,8 +879,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>196</ID>
           <Description>"Global.MSC"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0B939B28"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B9721D8"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -917,8 +892,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>23</ID>
           <Description>"Global.LV"</Description>
-          <LastState Value="1" Activated="0" RealAddress="0B938520"/>
-          <Color>80000008</Color>
+          <LastState Value="1" RealAddress="0B970CC0"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -931,8 +905,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>194</ID>
           <Description>"Global.Kills"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0B9394C0"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B971D00"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -945,8 +918,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>146</ID>
           <Description>"Global.Interact"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0B9393F8"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B971BE8"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -969,8 +941,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>24</ID>
           <Description>"Global.HP"</Description>
-          <LastState Value="20" Activated="0" RealAddress="0B9384A8"/>
-          <Color>80000008</Color>
+          <LastState Value="20" RealAddress="0B970C70"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -995,8 +966,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>27</ID>
           <Description>"Global.Gold"</Description>
-          <LastState Value="559" Activated="0" RealAddress="0B9387C8"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B970F40"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -1009,8 +979,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>161</ID>
           <Description>"Global.FileChoice"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0B939998"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B972318"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -1026,8 +995,7 @@ unregistersymbol(_base)
           <DropDownList DescriptionOnly="1">99999999:Encounter
 0:No Encounter
 </DropDownList>
-          <LastState Value="0" Activated="0" RealAddress="0B939510"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B971D28"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -1048,12 +1016,36 @@ unregistersymbol(_base)
               <ID>0</ID>
             </Hotkey>
           </Hotkeys>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>207</ID>
+              <Description>"Encounterer Values for Various Rooms (Steps to get encounter). Activate to see them"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" Activated="1" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>206</ID>
+                  <Description>"room_ruins9 (Single Rock)"</Description>
+                  <LastState Value="88" RealAddress="0B972E08"/>
+                  <VariableType>Double</VariableType>
+                  <Address>"UNDERTALE.exe"+002C144C</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                    <Offset>B4</Offset>
+                    <Offset>C8</Offset>
+                    <Offset>C</Offset>
+                    <Offset>680</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>26</ID>
           <Description>"Global.EXP"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0B938818"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B970C98"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -1066,8 +1058,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>137</ID>
           <Description>"Global.CurrentRoom"</Description>
-          <LastState Value="178" Activated="0" RealAddress="0B938930"/>
-          <Color>80000008</Color>
+          <LastState Value="15" RealAddress="0B971490"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -1078,8 +1069,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>157</ID>
           <Description>"Global.BattleGroup"</Description>
-          <LastState Value="3" Activated="0" RealAddress="0B938EF8"/>
-          <Color>80000008</Color>
+          <LastState Value="3" RealAddress="0B971AA8"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -1090,8 +1080,7 @@ unregistersymbol(_base)
         <CheatEntry>
           <ID>190</ID>
           <Description>"Global.ADef (Armor Defense)"</Description>
-          <LastState Value="0" Activated="0" RealAddress="0B938570"/>
-          <Color>80000008</Color>
+          <LastState Value="0" RealAddress="0B970FE0"/>
           <VariableType>Double</VariableType>
           <Address>"UNDERTALE.exe"+002EBD78</Address>
           <Offsets>
@@ -1112,6 +1101,10 @@ unregistersymbol(_base)
     </SymbolEntry>
     <SymbolEntry>
       <Name>UTBASE</Name>
+      <Address>006EBD78</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>_base</Name>
       <Address>006EBD78</Address>
     </SymbolEntry>
   </UserdefinedSymbols>
