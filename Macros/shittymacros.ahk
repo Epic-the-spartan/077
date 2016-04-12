@@ -33,7 +33,39 @@ Return
 
 ;PCE Auto Up
 Numpad8::
-SendInput {Up}
+SendInput {RControl}
+Sleep 32
+SendInput {Enter}
+Sleep 32
+SendInput {Enter}
+SendInput {Up Down}
+Sleep 32
+SendInput {Enter}
+Sleep 188
+SendInput {Enter}
+SendInput {Up Up}
+Return
+
+;PCE Auto Down
+Numpad2::
+SendInput {RControl}
+Sleep 32
+SendInput {Enter}
+Sleep 32
+SendInput {Enter}
+SendInput {Down Down}
+Sleep 32
+SendInput {Enter}
+Sleep 188
+SendInput {Enter}
+SendInput {Down Up}
+Return
+
+
+
+;PCE Auto Right
+Numpad6::
+SendInput {Right}
 SendInput {RControl}
 SendInput {RControl}
 Sleep 32
