@@ -21,9 +21,137 @@ unregistersymbol(_base)
 </AssemblerScript>
       <CheatEntries>
         <CheatEntry>
+          <ID>254</ID>
+          <Description>"Stats and the Such"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>124</ID>
+              <Description>"Omega Flowey Player HP"</Description>
+              <LastState Value="9.61503603937253E-316" RealAddress="0B998588"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>0</Offset>
+                <Offset>4</Offset>
+                <Offset>8C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>24</ID>
+              <Description>"Global.HP"</Description>
+              <LastState Value="20" RealAddress="0B9983A8"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>0</Offset>
+                <Offset>0</Offset>
+                <Offset>A8</Offset>
+              </Offsets>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Set Value</Action>
+                  <Keys>
+                    <Key>111</Key>
+                    <Key>109</Key>
+                    <Key>106</Key>
+                  </Keys>
+                  <Value>0</Value>
+                  <ID>0</ID>
+                </Hotkey>
+              </Hotkeys>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>25</ID>
+              <Description>"Global.MaxHP"</Description>
+              <LastState Value="20" RealAddress="0B9985B0"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>0</Offset>
+                <Offset>0</Offset>
+                <Offset>94</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>26</ID>
+              <Description>"Global.EXP"</Description>
+              <LastState Value="0" RealAddress="0B998420"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>0</Offset>
+                <Offset>4C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>23</ID>
+              <Description>"Global.LV"</Description>
+              <LastState Value="1" RealAddress="0B998650"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>0</Offset>
+                <Offset>FC</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>27</ID>
+              <Description>"Global.Gold"</Description>
+              <LastState Value="20" RealAddress="0B9983D0"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>0</Offset>
+                <Offset>4</Offset>
+                <Offset>F4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>190</ID>
+              <Description>"Global.ADef (Armor Defense)"</Description>
+              <LastState Value="0" RealAddress="0B998290"/>
+              <VariableType>Double</VariableType>
+              <Address>"UNDERTALE.exe"+002EBD78</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>0</Offset>
+                <Offset>0</Offset>
+                <Offset>4</Offset>
+                <Offset>B4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>186</ID>
+              <Description>"Global.WStr (Weapon AT)"</Description>
+              <LastState Value="0" RealAddress="0B999348"/>
+              <VariableType>Double</VariableType>
+              <Address>"UNDERTALE.exe"+002EBD78</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>0</Offset>
+                <Offset>AC</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>173</ID>
           <Description>"Inventory Editor (Activate This To Open)"</Description>
-          <Options moHideChildren="1"/>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
@@ -96,6 +224,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="1" RealAddress="0B8C3E08"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -176,6 +305,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="1" RealAddress="0B8C3E18"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -256,6 +386,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="1" RealAddress="0B8C3E28"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -336,6 +467,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="1" RealAddress="0B8C3E38"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -416,6 +548,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="7" RealAddress="0B8C3E48"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -496,6 +629,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="13" RealAddress="0B8C3E58"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -576,6 +710,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="11" RealAddress="0B8C3E68"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -656,6 +791,7 @@ unregistersymbol(_base)
 63:Snail Pie
 64:temy armor
 </DropDownList>
+              <LastState Value="0" RealAddress="0B8C3E78"/>
               <VariableType>Double</VariableType>
               <Address>_base</Address>
               <Offsets>
@@ -670,198 +806,441 @@ unregistersymbol(_base)
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>124</ID>
-          <Description>"Omega Flowey Player HP"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>4</Offset>
-            <Offset>8C</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>138</ID>
-          <Description>"Room"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>0090f300</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>199</ID>
-          <Description>"Room_Speed"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"UNDERTALE.exe"+0050F33C</Address>
-          <Offsets>
-            <Offset>C</Offset>
-          </Offsets>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Set Value</Action>
-              <Keys>
-                <Key>87</Key>
-                <Key>70</Key>
-              </Keys>
-              <Value>1</Value>
-              <ID>0</ID>
-            </Hotkey>
-            <Hotkey>
-              <Action>Set Value</Action>
-              <Keys>
-                <Key>81</Key>
-                <Key>87</Key>
-              </Keys>
-              <Value>30</Value>
-              <ID>1</ID>
-            </Hotkey>
-          </Hotkeys>
+          <ID>260</ID>
+          <Description>"Encounter Related Stuff"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>200</ID>
-              <Description>"Framerate1???"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>UNDERTALE.exe+50F324</Address>
+              <ID>157</ID>
+              <Description>"Global.BattleGroup"</Description>
+              <LastState Value="30" RealAddress="0B998E70"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>60</Offset>
+              </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>201</ID>
-              <Description>"Framerate2???"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>UNDERTALE.exe+51A4F0</Address>
+              <ID>123</ID>
+              <Description>"Global.Encounter"</Description>
+              <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+              <DropDownList DescriptionOnly="1">99999999:Encounter
+0:No Encounter
+</DropDownList>
+              <LastState Value="99999999" RealAddress="0B9993E8"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>D4</Offset>
+              </Offsets>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Set Value</Action>
+                  <Keys>
+                    <Key>16</Key>
+                    <Key>221</Key>
+                  </Keys>
+                  <Value>99999999</Value>
+                  <Description>Encounter</Description>
+                  <ID>0</ID>
+                </Hotkey>
+              </Hotkeys>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>207</ID>
+                  <Description>"Step Values for various rooms (Steps to get encounter). Activate to see them"</Description>
+                  <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                  <LastState Value="" Activated="1" RealAddress="00000000"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>261</ID>
+                      <Description>"Ruins"</Description>
+                      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>206</ID>
+                          <Description>"room_ruins9 (Single Rock)"</Description>
+                          <VariableType>Double</VariableType>
+                          <Address>"UNDERTALE.exe"+002C144C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>B4</Offset>
+                            <Offset>C8</Offset>
+                            <Offset>C</Offset>
+                            <Offset>680</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>262</ID>
+                      <Description>"Snowdin"</Description>
+                      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>251</ID>
+                          <Description>"room_tundra3 (Box room)"</Description>
+                          <LastState Value="322" RealAddress="0B9931C8"/>
+                          <VariableType>Double</VariableType>
+                          <Address>"UNDERTALE.exe"+002C144C</Address>
+                          <Offsets>
+                            <Offset>8</Offset>
+                            <Offset>B4</Offset>
+                            <Offset>C8</Offset>
+                            <Offset>C</Offset>
+                            <Offset>6A8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>263</ID>
+                      <Description>"Waterfall"</Description>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>264</ID>
+                      <Description>"Hotlands"</Description>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>265</ID>
+                      <Description>"Core"</Description>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>23</ID>
-          <Description>"Global.LV"</Description>
+          <ID>259</ID>
+          <Description>"Room Values"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>199</ID>
+              <Description>"Room_Speed"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="1" RealAddress="0B92C494"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"UNDERTALE.exe"+0050F33C</Address>
+              <Offsets>
+                <Offset>C</Offset>
+              </Offsets>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Set Value</Action>
+                  <Keys>
+                    <Key>87</Key>
+                    <Key>70</Key>
+                  </Keys>
+                  <Value>1</Value>
+                  <ID>0</ID>
+                </Hotkey>
+                <Hotkey>
+                  <Action>Set Value</Action>
+                  <Keys>
+                    <Key>81</Key>
+                    <Key>87</Key>
+                  </Keys>
+                  <Value>30</Value>
+                  <ID>1</ID>
+                </Hotkey>
+              </Hotkeys>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>200</ID>
+                  <Description>"Framerate1???"</Description>
+                  <LastState Value="1" RealAddress="0090F324"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>UNDERTALE.exe+50F324</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>201</ID>
+                  <Description>"Framerate2???"</Description>
+                  <LastState Value="1" RealAddress="0091A4F0"/>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>UNDERTALE.exe+51A4F0</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>137</ID>
+              <Description>"Global.CurrentRoom"</Description>
+              <LastState Value="46" RealAddress="0B998AD8"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>14</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>138</ID>
+              <Description>"Room"</Description>
+              <LastState Value="46" RealAddress="0090F300"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>0090f300</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>266</ID>
+          <Description>"Random Globals"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>146</ID>
+              <Description>"Global.Interact"</Description>
+              <LastState Value="1" RealAddress="0B999488"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>C</Offset>
+              </Offsets>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Set Value</Action>
+                  <Keys>
+                    <Key>106</Key>
+                    <Key>109</Key>
+                  </Keys>
+                  <Value>0</Value>
+                  <Description>Unfreeze Player</Description>
+                  <ID>0</ID>
+                </Hotkey>
+              </Hotkeys>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>253</ID>
+              <Description>"Global.Phasing (Walk through walls)"</Description>
+              <LastState Value="0" RealAddress="0B999208"/>
+              <VariableType>Double</VariableType>
+              <Address>"UNDERTALE.exe"+002EBD78</Address>
+              <Offsets>
+                <Offset>30</Offset>
+                <Offset>A4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>196</ID>
+              <Description>"Global.MSC"</Description>
+              <LastState Value="30" RealAddress="0B999A50"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>100</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>194</ID>
+              <Description>"Global.Kills"</Description>
+              <LastState Value="0" RealAddress="0B999618"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>0</Offset>
+                <Offset>B4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>161</ID>
+              <Description>"Global.FileChoice"</Description>
+              <LastState Value="0" RealAddress="0B999730"/>
+              <VariableType>Double</VariableType>
+              <Address>_base</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>4</Offset>
+                <Offset>EC</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>126</ID>
+              <Description>"Global.Plot (V1)"</Description>
+              <LastState Value="37" RealAddress="0B998920"/>
+              <VariableType>Double</VariableType>
+              <Address>undertale.exe+002ebd78</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>129</ID>
+                  <Description>"Global.Plot (V2)"</Description>
+                  <LastState Value="37" RealAddress="0B998920"/>
+                  <VariableType>Double</VariableType>
+                  <Address>_base</Address>
+                  <Offsets>
+                    <Offset>8</Offset>
+                    <Offset>4</Offset>
+                    <Offset>14</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>241</ID>
+      <Description>"Random Other Stuff I Hid to Remove Clutter"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>246</ID>
+          <Description>"Toriel Attack (Works until 2HP)"</Description>
+          <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">1:Falling Fire Slow
+30:Falling Fire Wavy Touhou
+50:Falling Fire Medium W/Fire up Sides
+90:Hands
+</DropDownList>
           <VariableType>Double</VariableType>
-          <Address>_base</Address>
+          <Address>"UNDERTALE.exe"+0050F33C</Address>
           <Offsets>
             <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>FC</Offset>
+            <Offset>AC</Offset>
+            <Offset>C8</Offset>
+            <Offset>114</Offset>
+            <Offset>84</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
-          <ID>24</ID>
-          <Description>"Global.HP"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>0</Offset>
-            <Offset>A8</Offset>
-          </Offsets>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Set Value</Action>
-              <Keys>
-                <Key>111</Key>
-                <Key>109</Key>
-                <Key>106</Key>
-              </Keys>
-              <Value>0</Value>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
+          <ID>231</ID>
+          <Description>"Camera_y_value_but_doesn't_move_shit"</Description>
+          <LastState Value="0" RealAddress="006F7A18"/>
+          <VariableType>Float</VariableType>
+          <Address>UNDERTALE.exe+2F7A18</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>25</ID>
-          <Description>"Global.MaxHP"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>0</Offset>
-            <Offset>94</Offset>
-          </Offsets>
+          <ID>240</ID>
+          <Description>"Camera_X_But_doesn't_move_shit"</Description>
+          <LastState Value="80" RealAddress="006F7A14"/>
+          <VariableType>Float</VariableType>
+          <Address>UNDERTALE.exe+2F7A14</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>255</ID>
+      <Description>"Coordinates (Player &amp; Camera)"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>256</ID>
+          <Description>"Camera"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>234</ID>
+              <Description>"Camera_X"</Description>
+              <LastState Value="80" RealAddress="0B93413C"/>
+              <VariableType>Float</VariableType>
+              <Address>"UNDERTALE.exe"+0050F33C</Address>
+              <Offsets>
+                <Offset>4</Offset>
+                <Offset>48</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>235</ID>
+              <Description>"Camera_Y"</Description>
+              <LastState Value="0" RealAddress="0B934140"/>
+              <VariableType>Float</VariableType>
+              <Address>"UNDERTALE.exe"+0050F33C</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>48</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>26</ID>
-          <Description>"Global.EXP"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>4C</Offset>
-          </Offsets>
+          <ID>257</ID>
+          <Description>"Player"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>238</ID>
+              <Description>"Player X Coord (Breaks during some cutscenes)"</Description>
+              <LastState Value="279" RealAddress="173C5470"/>
+              <VariableType>Double</VariableType>
+              <Address>"UNDERTALE.exe"+005114F4</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>44</Offset>
+                <Offset>C8</Offset>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>239</ID>
+              <Description>"Player Y Coord (Breaks during some cutscenes)"</Description>
+              <LastState Value="115" RealAddress="173C4E80"/>
+              <VariableType>Double</VariableType>
+              <Address>"UNDERTALE.exe"+005114F4</Address>
+              <Offsets>
+                <Offset>8</Offset>
+                <Offset>4</Offset>
+                <Offset>44</Offset>
+                <Offset>C8</Offset>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
-        <CheatEntry>
-          <ID>27</ID>
-          <Description>"Global.Gold"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>4</Offset>
-            <Offset>F4</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>190</ID>
-          <Description>"Global.ADef (Armor Defense)"</Description>
-          <VariableType>Double</VariableType>
-          <Address>"UNDERTALE.exe"+002EBD78</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>0</Offset>
-            <Offset>0</Offset>
-            <Offset>4</Offset>
-            <Offset>B4</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>129</ID>
-          <Description>"Global.Plot (V2)"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>14</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>126</ID>
-          <Description>"Global.Plot (V1)"</Description>
-          <VariableType>Double</VariableType>
-          <Address>undertale.exe+002ebd78</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>18</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>137</ID>
-          <Description>"Global.CurrentRoom"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>14</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>157</ID>
-          <Description>"Global.BattleGroup"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>60</Offset>
-          </Offsets>
-        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>258</ID>
+      <Description>"Cheats"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
         <CheatEntry>
           <ID>105</ID>
           <Description>"God Mode (Enable Before Battle)"</Description>
           <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1E99:Activate
 </DropDownList>
+          <LastState Value="-81" RealAddress="0B998EE8"/>
           <VariableType>Double</VariableType>
           <Address>_base</Address>
           <Offsets>
@@ -873,237 +1252,68 @@ unregistersymbol(_base)
           </Offsets>
         </CheatEntry>
         <CheatEntry>
-          <ID>123</ID>
-          <Description>"Global.Encounter"</Description>
-          <DropDownList DescriptionOnly="1">99999999:Encounter
-0:No Encounter
-</DropDownList>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>D4</Offset>
-          </Offsets>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Set Value</Action>
-              <Keys>
-                <Key>16</Key>
-                <Key>221</Key>
-              </Keys>
-              <Value>99999999</Value>
-              <Description>Encounter</Description>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
+          <ID>164</ID>
+          <Description>"Speedhack"</Description>
+          <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>207</ID>
-              <Description>"Encounterer Values for Various Rooms (Steps to get encounter). Activate to see them"</Description>
-              <Options moHideChildren="1"/>
-              <LastState Value="" RealAddress="00000000"/>
-              <GroupHeader>1</GroupHeader>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>206</ID>
-                  <Description>"room_ruins9 (Single Rock)"</Description>
-                  <VariableType>Double</VariableType>
-                  <Address>"UNDERTALE.exe"+002C144C</Address>
-                  <Offsets>
-                    <Offset>8</Offset>
-                    <Offset>B4</Offset>
-                    <Offset>C8</Offset>
-                    <Offset>C</Offset>
-                    <Offset>680</Offset>
-                  </Offsets>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>194</ID>
-          <Description>"Global.Kills"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>B4</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>186</ID>
-          <Description>"Global.WStr (Weapon AT)"</Description>
-          <VariableType>Double</VariableType>
-          <Address>"UNDERTALE.exe"+002EBD78</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>0</Offset>
-            <Offset>AC</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>146</ID>
-          <Description>"Global.Interact"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>C</Offset>
-          </Offsets>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Set Value</Action>
-              <Keys>
-                <Key>106</Key>
-                <Key>109</Key>
-              </Keys>
-              <Value>0</Value>
-              <Description>Unfreeze Player</Description>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>196</ID>
-          <Description>"Global.MSC"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>100</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>161</ID>
-          <Description>"Global.FileChoice"</Description>
-          <VariableType>Double</VariableType>
-          <Address>_base</Address>
-          <Offsets>
-            <Offset>8</Offset>
-            <Offset>4</Offset>
-            <Offset>4</Offset>
-            <Offset>EC</Offset>
-          </Offsets>
-        </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>234</ID>
-      <Description>"Camera_X"</Description>
-      <VariableType>Float</VariableType>
-      <Address>"UNDERTALE.exe"+0050F33C</Address>
-      <Offsets>
-        <Offset>4</Offset>
-        <Offset>48</Offset>
-      </Offsets>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>235</ID>
-      <Description>"Camera_Y"</Description>
-      <VariableType>Float</VariableType>
-      <Address>"UNDERTALE.exe"+0050F33C</Address>
-      <Offsets>
-        <Offset>8</Offset>
-        <Offset>48</Offset>
-      </Offsets>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>238</ID>
-      <Description>"Player X Coord (Breaks during some cutscenes)"</Description>
-      <VariableType>Double</VariableType>
-      <Address>"UNDERTALE.exe"+005114F4</Address>
-      <Offsets>
-        <Offset>8</Offset>
-        <Offset>44</Offset>
-        <Offset>C8</Offset>
-        <Offset>0</Offset>
-      </Offsets>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>239</ID>
-      <Description>"Player Y Coord (Breaks during some cutscenes)"</Description>
-      <VariableType>Double</VariableType>
-      <Address>"UNDERTALE.exe"+005114F4</Address>
-      <Offsets>
-        <Offset>8</Offset>
-        <Offset>4</Offset>
-        <Offset>44</Offset>
-        <Offset>C8</Offset>
-        <Offset>0</Offset>
-      </Offsets>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>164</ID>
-      <Description>"Speedhack"</Description>
-      <Options moHideChildren="1" moAllowManualCollapseAndExpand="1"/>
-      <LastState Value="" RealAddress="00000000"/>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>1</ID>
-          <Description>"(Speedhack) Slowdown Press ALT+Shift+Q"</Description>
-          <LastState/>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+              <ID>1</ID>
+              <Description>"(Speedhack) Slowdown Press ALT+Shift+Q"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 luacall(speedhack_setSpeed(0.2))
 
 
 [DISABLE]
 luacall(speedhack_setSpeed(1))
 </AssemblerScript>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Toggle Activation</Action>
-              <Keys>
-                <Key>81</Key>
-                <Key>16</Key>
-                <Key>18</Key>
-              </Keys>
-              <Description>(Speedhack) Half Speed</Description>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>101</ID>
-          <Description>"(Speedhack) Skip Speed Press ALT+Shift+E"</Description>
-          <LastState/>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Toggle Activation</Action>
+                  <Keys>
+                    <Key>81</Key>
+                    <Key>16</Key>
+                    <Key>18</Key>
+                  </Keys>
+                  <Description>(Speedhack) Half Speed</Description>
+                  <ID>0</ID>
+                </Hotkey>
+              </Hotkeys>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>101</ID>
+              <Description>"(Speedhack) Skip Speed Press ALT+Shift+E"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 luacall(speedhack_setSpeed(999999))
 
 
 [DISABLE]
 luacall(speedhack_setSpeed(1))
 </AssemblerScript>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Toggle Activation</Action>
-              <Keys>
-                <Key>16</Key>
-                <Key>69</Key>
-                <Key>18</Key>
-              </Keys>
-              <Description>(Speedhack) 4x Speed</Description>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>108</ID>
-          <Description>"(Speedhack) Frame Advance Press ALT+SHIFT+="</Description>
-          <LastState/>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Toggle Activation</Action>
+                  <Keys>
+                    <Key>16</Key>
+                    <Key>69</Key>
+                    <Key>18</Key>
+                  </Keys>
+                  <Description>(Speedhack) 4x Speed</Description>
+                  <ID>0</ID>
+                </Hotkey>
+              </Hotkeys>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>108</ID>
+              <Description>"(Speedhack) Frame Advance Press ALT+SHIFT+="</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 luacall(speedhack_setSpeed(1))
 luacall(sleep(1))
 luacall(speedhack_setSpeed(0))
@@ -1113,59 +1323,22 @@ luacall(speedhack_setSpeed(1))
 luacall(sleep(1))
 luacall(speedhack_setSpeed(0))
 </AssemblerScript>
-          <Hotkeys>
-            <Hotkey>
-              <Action>Toggle Activation</Action>
-              <Keys>
-                <Key>18</Key>
-                <Key>16</Key>
-                <Key>187</Key>
-              </Keys>
-              <Description>(Speedhack) 4x Speed</Description>
-              <ID>0</ID>
-            </Hotkey>
-          </Hotkeys>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Toggle Activation</Action>
+                  <Keys>
+                    <Key>18</Key>
+                    <Key>16</Key>
+                    <Key>187</Key>
+                  </Keys>
+                  <Description>(Speedhack) 4x Speed</Description>
+                  <ID>0</ID>
+                </Hotkey>
+              </Hotkeys>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
       </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>241</ID>
-      <Description>"Random"</Description>
-      <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>231</ID>
-          <Description>"Camera_y_value_but_doesn't_move_shit"</Description>
-          <VariableType>Float</VariableType>
-          <Address>UNDERTALE.exe+2F7A18</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>240</ID>
-          <Description>"Camera_X_But_doesn't_move_shit"</Description>
-          <VariableType>Float</VariableType>
-          <Address>UNDERTALE.exe+2F7A14</Address>
-        </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>246</ID>
-      <Description>"Toriel Attack (Works until 2HP)"</Description>
-      <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">1:Falling Fire Slow
-30:Falling Fire Wavy Touhou
-50:Falling Fire Medium W/Fire up Sides
-90:Hands
-</DropDownList>
-      <VariableType>Double</VariableType>
-      <Address>"UNDERTALE.exe"+0050F33C</Address>
-      <Offsets>
-        <Offset>8</Offset>
-        <Offset>AC</Offset>
-        <Offset>C8</Offset>
-        <Offset>114</Offset>
-        <Offset>84</Offset>
-      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols>
